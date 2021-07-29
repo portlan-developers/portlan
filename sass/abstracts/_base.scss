@@ -47,9 +47,6 @@
 
 html{
 	font-size: 62.5%;
-	@include phone-only{
-		font-size: 50%;
-	}
 }
 
 body{

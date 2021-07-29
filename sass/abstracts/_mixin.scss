@@ -17,22 +17,22 @@
     
 }
 @mixin keyframe_outIn {
-@keyframes outIn {
-	0%{
-	background-blend-mode: darken;
-	opacity: 0.89;
-	transform: scale(1);
-	animation-timing-function: ease;
-	
-	}
-	100%{
-	background-blend-mode: lighten;
-	transform: scale(1.1);
-	opacity: 1;
-	animation-timing-function: ease;
-	}
+	@keyframes outIn {
+		0%{
+		background-blend-mode: darken;
+		opacity: 0.89;
+		transform: scale(1);
+		animation-timing-function: ease;
+		
+		}
+		100%{
+		background-blend-mode: lighten;
+		transform: scale(1.1);
+		opacity: 1;
+		animation-timing-function: ease;
+		}
 
-     }
+	}
 	animation-name: outIn;
 	animation-duration: 4s;
 	animation-timing-function: ease;
@@ -43,15 +43,19 @@
 @mixin phone-only {
 	@media only screen and (max-width: 768px) { @content; }
 }
-@mixin tablelt {
+
+@mixin tablet {
 	@media only screen and (max-width: 1079px) { @content; }
 }
+
 @mixin tablet-landscape {
-		@media only screen and (max-width: 900px) { @content; }
+	@media only screen and (max-width: 900px) { @content; }
 }
+
 @mixin desktop {
 	@media only screen and (max-width: 1200px) { @content; }
 }
+
 @mixin big-desktop {
 	@media only screen and (max-width: 1800px) { @content; }
 }
