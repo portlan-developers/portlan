@@ -209,12 +209,12 @@
 				<div class="field">
 					<input type="text" name="fullName" class="form__input input-check" id="fUllName" placeholder=" " >
 					<span class="form__tooltip">نام و نام خانوادگی را وارد کنید</span>
-					<label for="fullName" >نام و نام خانوادگی</label>
+					<label class="form__label" for="fullName" >نام و نام خانوادگی</label>
 				</div>
 				<div class="field">
 					<input type="text" name="companyName" class="form__input input-check" id="companyName" placeholder=" ">
 					<span class="form__tooltip">نام شرکت را وارد کنید</span>
-					<label for="companyName">نام شرکت</label>
+					<label class="form__label" for="companyName">نام شرکت</label>
 
 				</div>
 			</div>
@@ -222,13 +222,13 @@
 				<div class="field">
 					<input type="email" name="email" class="form__input input-check" id="email" placeholder=" "  pattern='\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'>
 					<span class="form__tooltip">ایمیل را وارد کنید</span>
-					<label for="email">ایمیل</label>
+					<label class="form__label" for="email">ایمیل</label>
 				</div>
 				
 				<div class="field">
 					<input type="tel" name="phone" class="form__input input-check" id="phone"  maxlength="11" placeholder=" " pattern='09(1[0-9]|3[1-9]|2[1-9]|9[0-9])-?[0-9]{3}-?[0-9]{4}'>
 					<span class="form__tooltip">تلفن همراه را وارد کنید</span>
-					<label for="phone">تلفن همراه</label>
+					<label class="form__label" for="phone">تلفن همراه</label>
 				</div>
 			</div>
 			
@@ -236,7 +236,7 @@
 			<div class="field">
 				<textarea  name="pDescription" class="form__input input-check" id="pDescription"  rows="4" placeholder=" " ></textarea>
 				<span class="form__tooltip">توضیحات پروژه را وارد کنید</span>
-				<label for="pDescription">توضیحات پروژه</label>
+				<label class="form__label" for="pDescription">توضیحات پروژه</label>
 
 			</div>
 			<div class="form__attach">
@@ -251,10 +251,10 @@
 			</div>
 			<div class="attach__description"> تا پنج فایل قابل می توانید بارگزاری کنید.حجم هر فایل باید کمتر از ۵ مگابایت باشد.  </div>
 			<div class="form__submit">
-				<button type="submit" class="submit">ثبت</button>
+				<button type="submit" class="form--submit">ثبت</button>
 			
 				<div class="form__cookies">
-					<p class="form__cookie--text"> با ثبت این فرم،رضایت می دهم تا پورتلن داده های شخصی من را طبق <span> سیاست حفظ حریم خصوصی پورتلن</span> پردازش کند.</p>
+					<p class="form__cookie--text"> با ثبت این فرم،رضایت می دهم تا پورتلن داده های شخصی من را طبق <span class="contact__span"> سیاست حفظ حریم خصوصی پورتلن</span> پردازش کند.</p>
 				</div>
 			</div>
 			
@@ -267,5 +267,6 @@
     <footer class="container__footer"></footer>
 	
 		<script src="./js/slider.mini.js"></script>
+		<script src="js/contact.js"></script>
   </body>
 </html>
