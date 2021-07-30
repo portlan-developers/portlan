@@ -1,0 +1,133 @@
+.integrated__card--box{
+    @include phone-only{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,  1fr) !important;
+        grid-template-rows: repeat(1,  1fr) !important;
+        position: relative;
+        overflow: scroll;
+    }
+    @include tablelt{
+        
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,  1fr);
+        grid-template-rows: repeat(2,  1fr);
+        position: relative;
+        overflow: scroll;
+        
+    }
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4,  1fr);
+    grid-template-rows: repeat(2,  1fr);
+    position: relative;
+    overflow: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+.imgs{
+      @include phone-only{
+         height: 30rem;
+    }
+    @include tablelt{
+        height: 20rem;
+    }
+  
+    height: 36rem;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+
+}
+.img{
+    display: none;
+    position: absolute;
+    top: 0;
+    transition: transform ease 4s;
+    &-title{
+        z-index: 99;
+        color: rgba(255, 255, 255, 0.705);
+    }
+    &-detail{
+        color: rgba(255, 255, 255, 0.705);
+        font-size: 2.2rem;
+    }
+
+
+    &-item1{
+        background-image: url('../img/1.jpg');
+
+    }
+    &-item2{
+        background-image: url('../img/2.jpg');
+
+    }
+    &-item3{
+        background-image: url('../img/3.jpg');
+        
+    }
+    &-item4{
+        background-image: url('../img/4.jpg');
+        
+    }
+    &-item5{
+        background-image: url('../img/5.jpg');
+        
+    }
+    &-item6{
+        background-image: url('../img/6.jpg');
+        
+    }
+    &-item7{
+        background-image: url('../img/7.jpg');
+        
+    }
+    &-item8{
+        background-image: url('../img/8.jpg');
+        
+    }
+}
+.full{
+     &.img-title{
+        color: #fff;
+    }
+     &.img-detail{
+        color: #fff;
+
+    }
+    &.img{
+    
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 0 1px 1px #eee;
+        transition: all 0.8s;
+        @include keyframe_inout;
+        @include phone-only{
+            display: none;
+            
+        }
+    }
+    &.imgs{
+        z-index: 99;
+        @include keyframe_outIn;
+        border-radius: 8px;
+        transition: all 0.8s;
+        @include phone-only{
+            
+            border-radius: 0;
+        }
+
+    
+    
+    }
+}

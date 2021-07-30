@@ -47,12 +47,17 @@
 
 html{
 	font-size: 62.5%;
+	@include phone-only{
+		font-size: 50%;
+	}
 }
 
 body{
 	font-family: 'IRANSans';
 	box-sizing: border-box;
 }
+
+
 
 .container{
 	width: 100%;
@@ -125,4 +130,5 @@ body{
 	&__footer{
 		background-color: #3d3c42;
 	}
+
 }

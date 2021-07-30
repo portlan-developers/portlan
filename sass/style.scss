@@ -1,13 +1,2 @@
-@import 
-"abstracts/base" ,
-"abstracts/colors" ,
-"abstracts/mixin" , 
-"layout/header" ,
-"layout/cards" ,
-"layout/integrated-cards" ,
-"layout/slider" ,
-"layout/quote" ,
-"layout/info" ,
-"layout/section-crad" ,
-"layout/contact" ,
-"layout/footer";
+@import "abstracts/mixin", "abstracts/base", "abstracts/colors", "components/alert", "components/btn", "components/input", "components/slider"
+,"layout/nav", "layout/header", "layout/footer", "layout/integrated-cards", "pages/home";
