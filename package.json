@@ -1,0 +1,15 @@
+{
+  "name": "portlan",
+  "version": "1.0.0",
+  "description": "portlan website",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/style.scss css/style.css --watch",
+    "compile": "node-sass sass/style.scss css/style.css "
+  },
+  "author": "amanda-taheri",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

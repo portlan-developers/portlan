@@ -1,0 +1,35 @@
+.info__span{
+    color:$color-green;
+}
+.info__title{
+   
+    text-align: center;
+}
+.info__description{
+    
+    text-align: center;
+}
+.btn__container{
+    position: relative;
+    margin: 30px;
+    padding: 20px;
+}
+
+.btn{
+    border:  2px solid #53c537;
+    background-color: transparent;
+
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media  only screen and(min-width:1100px) {
+  .info__top{
+    display: flex;
+   } 
+   .left{
+       flex-basis: 60%;
+   } 
+}

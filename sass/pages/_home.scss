@@ -1,0 +1,7 @@
+.container{
+    &__integrated--card{
+        display: grid;
+        place-items: center;
+        width: 100%;
+    }
+}
