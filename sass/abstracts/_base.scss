@@ -50,6 +50,8 @@ html{
 	@include phone-only{
 		font-size: 50%;
 	}
+	scroll-behavior: smooth;
+
 }
 
 body{
