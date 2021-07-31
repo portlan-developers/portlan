@@ -1,0 +1,121 @@
+.container__cards {
+    width: 100%;
+}
+
+.cards {
+    width: 99%;
+    &__title {
+        font-size: 42px;
+        width: 100%;
+        text-align: center;
+    }
+    &__decsription {
+        text-align: center;
+        margin-top: 22px;
+        color: #000;
+        font-size: 20px;
+        transition: all 0.5s;
+    }
+    &__items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 30px 5px;
+    }
+    &__items a {
+        text-decoration: none;
+        margin: auto 20px;
+        background-color: #f2f2f2;
+        box-shadow: 0 0 2px 3px #eee;
+        transition: all 0.5s;
+    }
+    &__name {
+        transition: all 0.5s;
+        font-size: 28px;
+        color: black;
+    }
+    &__items a:hover .cards__name {
+        color: white;
+    }
+    &-items a:hover .cards__decsription {
+        color: white;
+    }
+    &--1 {
+        transition: all 1s;
+        width: 613px;
+        height: 450px;
+    }
+    &--2 {
+        transition: all 1s;
+        width: 613px;
+        height: 450px;
+    }
+    &--3 {
+        transition: all 1s;
+        width: 613px;
+        height: 450px;
+    }
+    &--1:hover {
+        background-image: linear-gradient(to right, rgba(146, 177, 199, 0.8), rgba(87, 188, 255, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/enterprise_software_development_cover.jpg?itok=Pw7sxuIw");
+    }
+    &--2:hover {
+        background-image: linear-gradient(to right, rgba(146, 177, 199, 0.8), rgba(87, 188, 255, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/custom_web_application_development_cover.jpg?itok=EtSFE6MH");
+    }
+    &--3:hover {
+        background-image: linear-gradient(to right, rgba(146, 177, 199, 0.8), rgba(87, 188, 255, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/bg-mobile-app-development.jpg?itok=8cZ7Q-l3");
+    }
+    &__box {
+        text-align: center;
+        margin: auto 0px;
+        padding: 46px;
+    }
+    &__logo {
+        transition: all 0.5s;
+    }
+    &__logo a:hover {
+        color: white;
+    }
+}
+
+@media (max-width:1032px) {
+    .cards {
+        &__title {
+            font-size: 29px;
+            width: 100%;
+            text-align: center;
+        }
+        &__description {
+            font-size: 22px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &__items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 5px;
+        }
+        &__items a {
+            margin: 10px;
+        }
+        &--1:hover {
+            background-image: linear-gradient(to right, rgba(26, 76, 112, 0.8), rgba(27, 42, 53, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/enterprise_software_development_cover.jpg?itok=Pw7sxuIw");
+            background-size: cover;
+            background-position: top;
+            font-size: 40px;
+        }
+        &--2:hover {
+            background-image: linear-gradient(to right, rgba(26, 76, 112, 0.8), rgba(27, 42, 53, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/custom_web_application_development_cover.jpg?itok=EtSFE6MH");
+            background-size: cover;
+            background-position: top;
+            font-size: 40px;
+        }
+        &--3:hover {
+            background-image: linear-gradient(to right, rgba(26, 76, 112, 0.8), rgba(27, 42, 53, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/bg-mobile-app-development.jpg?itok=8cZ7Q-l3");
+            background-size: cover;
+            background-position: top;
+            font-size: 40px;
+        }
+    }
+}
