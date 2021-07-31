@@ -94,28 +94,205 @@ body {
   .container__footer {
     background-color: #3d3c42; }
 
+.header_container {
+  background-image: url(../img/header.png);
+  width: 100%;
+  height: 105vh;
+  background-size: cover;
+  background-position: top; }
+
+.header__nav--list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  align-content: center;
+  margin: 0rem 10rem; }
+
+.header__nav--item {
+  margin-top: 2.2rem; }
+  .header__nav--item-logo {
+    margin-left: auto;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-family: 'Nunito'; }
+  .header__nav--item-link:link, .header__nav--item-link:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 100;
+    padding-bottom: 2rem;
+    margin: 3rem 3rem;
+    position: relative; }
+  .header__nav--item-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.2s ease-in-out; }
+  .header__nav--item-link:hover::after {
+    width: 100%; }
+  .header__nav--item-link-1 {
+    font-size: 1.8rem;
+    font-weight: 100;
+    transition: all 0.2s;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.4rem 3.2rem;
+    border-radius: 5px; }
+    .header__nav--item-link-1:hover {
+      color: #234;
+      background-color: #fff; }
+  .header__nav--item-link-2 {
+    color: #fff;
+    text-decoration: none; }
+
+.header__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 73%;
+  text-align: center; }
+  .header__heading__primari--span {
+    display: block;
+    font-size: 5.5rem;
+    color: #fff;
+    font-weight: 400;
+    padding: 0 8rem; }
+    .header__heading__primari--span::selection {
+      background-color: #234;
+      color: #ff0000; }
+
+.dropdown {
+  display: none; }
+
+nav {
+  position: relative; }
+
+.active.dropdown {
+  top: 110px;
+  display: block;
+  background-color: #fff;
+  padding: 60px;
+  position: absolute; }
+
+.dropdown-1 {
+  left: 500px; }
+
+.dropdown-2 {
+  left: 400px; }
+
+.dropdown-3 {
+  left: 300px; }
+
+.dropdown-4 {
+  left: 200px; }
+
+.header__nav--item--responsive {
+  display: none; }
+
+@media screen and (max-width: 75em) {
+  .padding {
+    display: none; }
+  .header__nav--list {
+    margin: 0 5rem; }
+  .header__nav--menu {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative; }
+    .header__nav--menu::after {
+      content: "";
+      width: 35px;
+      height: 3px;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      background-color: #fff; }
+    .header__nav--menu::before {
+      content: "";
+      width: 35px;
+      height: 3px;
+      position: absolute;
+      top: -8px;
+      left: 0;
+      background-color: #fff; }
+  .header__nav--item--responsive {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    margin-top: 4.9rem;
+    margin-right: 3rem;
+    cursor: pointer; } }
+
+@media screen and (max-width: 51.875em) {
+  .header__nav--item-contact {
+    display: none; }
+  .header__nav--item-logo {
+    font-size: 4rem; }
+  .header__heading__primari--span {
+    font-size: 4rem; }
+  .header_container {
+    height: 75vh; } }
+
+@media screen and (max-width: 500px) {
+  .header__heading__primari--span {
+    font-size: 3rem;
+    padding: 0 3rem; }
+  .header_container {
+    height: 65vh; }
+  .header__nav--item-logo {
+    font-size: 3.5rem; }
+  .header__nav--list {
+    margin: 0 2rem; } }
+
 .info__span {
   color: #53c537; }
 
 .info__title {
-  text-align: center; }
+  width: 100%;
+  font-size: 2.7rem;
+  text-align: center;
+  margin: 2rem 0; }
 
 .info__description {
-  text-align: center; }
+  font-size: 1.5rem;
+  direction: ltr;
+  text-align: justify; }
 
 .btn__container {
   position: relative;
   margin: 30px;
   padding: 20px; }
 
+.info__top {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .btn {
-  border: 2px solid #53c537;
+  font-weight: 300;
+  border: 1px solid #53c537;
   background-color: transparent;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  padding: 2rem;
+  transition: all ease 500ms;
+  border-radius: 8px; }
+  .btn:hover {
+    background-color: #53c537;
+    color: #fff; }
 
 @media only screen and (min-width: 1100px) {
   .info__top {
@@ -539,3 +716,86 @@ label {
     border-bottom: 11px solid #f83535;
     position: absolute;
     top: -10px; }
+
+.section__card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
+  .section__card--head {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    top: 7rem;
+    transition: all .4s ease-in-out; }
+  .section__card--main {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 100;
+    width: 75%;
+    position: absolute;
+    transition: all .4s ease-in-out;
+    top: 43%; }
+  .section__card--footer {
+    position: absolute;
+    top: 100%;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 100;
+    width: 71%;
+    transition: all .4s ease-in-out; }
+  .section__card--box:hover .section__card--head {
+    top: -10rem; }
+  .section__card--box:hover .section__card--main {
+    top: 7rem; }
+  .section__card--box:hover .section__card--footer {
+    top: 43%; }
+
+.section__card--box {
+  height: 42rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden; }
+  .section__card--box--1 {
+    background-image: url(../img/adidas_micoach_your_personal_trainer_powered_by_device.jpeg);
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%; }
+  .section__card--box--2 {
+    background-image: url(../img/custom_cms_and_web_portal_for_philips_pronto.jpeg);
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%; }
+  .section__card--box--3 {
+    background-image: url(../img/device_network_coverage_for_an_interactive_cafe.jpeg);
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%; }
+  .section__card--box--4 {
+    background-image: url(../img/iflexion_revamps_expedia_partner_network.jpeg);
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%; }
+  .section__card--box--5 {
+    background-image: url(../img/innovative_web_and_mobile_application_for_better_logistics.jpeg);
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%; }
+  .section__card--box--6 {
+    background-image: url(../img/punch_list_cover_1980x1020_0.jpeg);
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%; }
+  .section__card--box--7 {
+    background-image: url(../img/returns_management_solution_cover.jpeg);
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%; }
+  .section__card--box--8 {
+    background-image: url(../img/toyota_dealership_management_system.jpeg);
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%; }
