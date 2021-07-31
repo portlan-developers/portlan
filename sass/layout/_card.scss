@@ -1,0 +1,115 @@
+
+$color : #fff;
+
+
+
+.section__card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    
+    &--head{
+        color : $color;
+        font-size: 2rem;
+        font-weight: 900;
+        position: absolute;
+        top: 7rem;
+        transition: all .4s ease-in-out ;
+        
+        
+    }
+    &--main{
+        color : $color; 
+        font-size: 2.2rem;
+        font-weight: 100;
+        width: 75%; 
+        position: absolute;
+        transition: all .4s ease-in-out;
+        top: 43%;
+    }
+    &--footer{
+        position: absolute;
+        top: 100%;
+        font-size: 1.6rem;
+        color: $color;
+        font-weight: 100;
+        width: 71%; 
+        transition: all .4s ease-in-out;
+    }
+
+    &--box:hover  &--head{
+        top: -10rem;
+    }
+    &--box:hover  &--main{
+        top: 7rem;
+    }
+    &--box:hover  &--footer{
+        top: 43%;
+    }
+
+
+
+
+}
+.section__card--box{
+    height: 42rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    &--1{
+        background-image: url(../img/adidas_micoach_your_personal_trainer_powered_by_device.jpeg) ;
+         filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+        
+    }
+    &--2{
+        background-image: url(../img/custom_cms_and_web_portal_for_philips_pronto.jpeg);
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+    }
+    &--3{
+        background-image: url(../img/device_network_coverage_for_an_interactive_cafe.jpeg);
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+    }
+    &--4{
+        background-image: url(../img/iflexion_revamps_expedia_partner_network.jpeg);
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+    }
+    &--5{
+        background-image: url(../img/innovative_web_and_mobile_application_for_better_logistics.jpeg);
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+    }
+    &--6{
+        background-image: url(../img/punch_list_cover_1980x1020_0.jpeg);
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+    }
+    &--7{
+        background-image: url(../img/returns_management_solution_cover.jpeg);
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+    }
+    &--8{
+        background-image: url(../img/toyota_dealership_management_system.jpeg);
+        filter: brightness(60%);
+        width: 100%;
+        height: 100%;
+    }
+
+    
+
+}
+

@@ -1,16 +1,15 @@
 {
-  "name": "javascript",
+  "name": "portlan-front",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "watch": "node-sass sass/style.scss css/style.css --watch",
-    "compile": "node-sass sass/style.scss css/style.compile.css",
-    "compress": "node-sass sass/style.scss css/style.compress.css --output-style compressed",
-    "prefix": "postcss -use autoprefixer -b 'last 20 version' -o css/style.css css/style.compress.css ",
-    "build":"npm-run-all compress prefix"
+    "compile": "node-sass sass/style.scss css/style.css"
+
+ 
   },
-  "author": "hadi",
+  "author": "portlan",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1"
