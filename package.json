@@ -6,8 +6,6 @@
   "scripts": {
     "watch": "node-sass sass/style.scss css/style.css --watch",
     "compile": "node-sass sass/style.scss css/style.css"
-
- 
   },
   "author": "portlan",
   "license": "ISC",
