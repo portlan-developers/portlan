@@ -165,6 +165,9 @@ body {
       border: 2px solid #fff;
       padding: 0.4rem 3.2rem;
       border-radius: 5px; }
+      @media only screen and (max-width: 1079px) {
+        .header__nav--item-link-1 {
+          display: none; } }
       .header__nav--item-link-1:hover {
         color: #234;
         background-color: #fff; }
@@ -326,6 +329,61 @@ nav {
       display: block;
       font-size: 4rem;
       margin-top: 3rem; } }
+
+.hidden {
+  display: none; }
+
+.bar-md-menu {
+  transition: height ease 500ms;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 8%;
+  height: 100vh;
+  z-index: 999; }
+  @media only screen and (max-width: 1079px) {
+    .bar-md-menu {
+      top: 11.4%; } }
+  @media only screen and (max-width: 768px) {
+    .bar-md-menu {
+      top: 8%; } }
+  .bar-md-menu__item {
+    margin: 4rem;
+    list-style: none; }
+    .bar-md-menu__item-link {
+      font-size: 2.1rem;
+      text-decoration: none;
+      color: #222;
+      position: relative;
+      transition: all 0.2s ease-in-out; }
+      .bar-md-menu__item-link::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: #fb2c3a;
+        position: absolute;
+        top: 88%;
+        left: 0;
+        transition: all 0.2s ease-in-out; }
+      .bar-md-menu__item-link:hover::after {
+        width: 100%; }
+    .bar-md-menu__item-about {
+      font-size: 2.1rem;
+      text-decoration: none;
+      color: #fb2c3a;
+      border: 1px solid #fb2c3a;
+      border-radius: 8px;
+      padding: 1rem;
+      transition: all ease 500ms; }
+      .bar-md-menu__item-about:hover {
+        background-color: #fb2c3a;
+        color: #fff; }
+
+.fa-bars::before {
+  transition: content ease 500ms; }
+
+.open-bars.fa-bars::before {
+  content: "\f00d"; }
 
 .info__span {
   color: #53c537; }

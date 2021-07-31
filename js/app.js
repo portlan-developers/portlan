@@ -3,8 +3,26 @@ navbar = document.querySelector('#navbar'),
 links = document.querySelectorAll('.header__nav--item-link'),
 logo = document.querySelector('.header__nav--item-link-2'),
 about = document.querySelector('.header__nav--item-link-1')
-lists = document.querySelector(".header__nav--list")
+lists = document.querySelector(".header__nav--list");
 
+
+// bars menu
+
+const barsmenu = document.querySelector('#bars-menu'),
+barsBtn = document.querySelector('#bars-btn'),
+baricon = document.querySelector('.fa-bars')
+
+
+// events
+barsBtn.addEventListener('click', function () {
+    barsmenu.classList.toggle('hidden')
+    baricon.classList.toggle('open-bars')
+    
+})
+
+
+
+// function
 document.addEventListener('scroll', function (){
     if (window.scrollY < 80) {
         header.classList.remove('full_header');
@@ -29,3 +47,5 @@ document.addEventListener('scroll', function (){
     }
 
 })
+
+

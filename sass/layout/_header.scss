@@ -81,6 +81,9 @@ $media-small: 500px;
                     width: 100%;
                 }
                 &-1{
+                    @include tablelt{
+                        display: none;
+                    }
                     font-size: 1.8rem;
                     font-weight: 100; 
                     transition: all 0.2s;
@@ -297,4 +300,68 @@ nav{
         margin-top: 3rem;
 
     }
+}
+
+
+.hidden{
+    display: none;
+}
+.bar-md-menu{
+    transition: height ease 500ms;
+    @include tablelt{
+        top: 11.4%;
+    }
+    @include phone-only{
+    top: 8%;
+
+    }
+    width: 100%;
+    background-color: $color-white;
+    position: fixed;
+    top: 8%;
+    height: 100vh;
+    z-index: 999;
+    &__item{
+        margin: 4rem;
+        list-style: none;
+        &-link{
+            font-size: 2.1rem;
+            text-decoration: none;
+            color: #222;
+            position: relative;
+            transition: all 0.2s ease-in-out;
+
+            &::after{
+                content: "";
+                width: 0%;
+                height: 2px;
+                background-color: #fb2c3a;
+                position: absolute;
+                top: 88%;
+                left: 0;
+                transition: all 0.2s ease-in-out;
+            }  &:hover::after{
+                width: 100%;
+            }
+        }
+        &-about{
+            font-size: 2.1rem;
+            text-decoration: none;
+            color: #fb2c3a;
+            border: 1px solid #fb2c3a;
+            border-radius: 8px;
+            padding: 1rem;
+            transition: all ease 500ms;
+            &:hover{
+                background-color: #fb2c3a;
+                color: $color-white;
+            }
+        }
+    }
+}
+.fa-bars::before{
+    transition: content ease 500ms;
+}
+.open-bars.fa-bars::before{
+    content: "\f00d";
 }
