@@ -24,6 +24,7 @@
         text-decoration: none;
         color: #868688;
         line-height: 18px;
+        transform:  all ease 500ms;
     }
     &__list--item>a:hover {
         color: #dedee4;
@@ -36,7 +37,10 @@
         color: #fff;
     }
     &__logo {
-        color: red;
+        color:#fb2c3a;
+        font-family: 'Righteous', cursive;
+        text-transform: uppercase;
+
     }
     &__list--text {
         width: 100%;
