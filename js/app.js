@@ -17,6 +17,8 @@ baricon = document.querySelector('.fa-bars')
 barsBtn.addEventListener('click', function () {
     barsmenu.classList.toggle('hidden')
     baricon.classList.toggle('open-bars')
+    document.body.classList.toggle('scroll')
+
     
 })
 
@@ -33,6 +35,7 @@ document.addEventListener('scroll', function (){
         logo.classList.remove("full_header")
         about.classList.remove("full_header")
         lists.classList.remove("full_header")
+
     }else{
 
         about.classList.add("full_header")

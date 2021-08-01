@@ -303,16 +303,23 @@ nav{
 }
 
 
-.hidden{
-    display: none;
-}
+
 .bar-md-menu{
+     @include desktop{
+         display: none;
+     }
+     @include big-desktop{
+        display: none;
+    }
+
     transition: height ease 500ms;
     @include tablelt{
         top: 11.4%;
+        display: block;
     }
     @include phone-only{
     top: 8%;
+    display: block;
 
     }
     width: 100%;
@@ -364,4 +371,7 @@ nav{
 }
 .open-bars.fa-bars::before{
     content: "\f00d";
+}
+.hidden{
+    display: none;
 }

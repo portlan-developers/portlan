@@ -41,7 +41,11 @@ html {
 body {
   font-family: 'IRANSans';
   box-sizing: border-box;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+.scroll {
+  overflow-y: scroll !important; }
 
 .container {
   width: 100%; }
@@ -331,9 +335,6 @@ nav {
       font-size: 4rem;
       margin-top: 3rem; } }
 
-.hidden {
-  display: none; }
-
 .bar-md-menu {
   transition: height ease 500ms;
   width: 100%;
@@ -342,12 +343,20 @@ nav {
   top: 8%;
   height: 100vh;
   z-index: 999; }
+  @media only screen and (max-width: 1200px) {
+    .bar-md-menu {
+      display: none; } }
+  @media only screen and (max-width: 1800px) {
+    .bar-md-menu {
+      display: none; } }
   @media only screen and (max-width: 1079px) {
     .bar-md-menu {
-      top: 11.4%; } }
+      top: 11.4%;
+      display: block; } }
   @media only screen and (max-width: 768px) {
     .bar-md-menu {
-      top: 8%; } }
+      top: 8%;
+      display: block; } }
   .bar-md-menu__item {
     margin: 4rem;
     list-style: none; }
@@ -385,6 +394,9 @@ nav {
 
 .open-bars.fa-bars::before {
   content: "\f00d"; }
+
+.hidden {
+  display: none; }
 
 .info__span {
   color: #53c537; }
