@@ -1116,3 +1116,368 @@ label {
     color: #fff; }
   .php-page__section-2-title {
     font-size: 3.1rem; }
+
+.php-page__section-3__heading {
+  font-weight: 400;
+  font-size: 1.9rem;
+  text-align: center;
+  width: 100%; }
+
+.php-page__section-3__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.php-page__section-3__box {
+  width: 95%;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-rows: repeat(2, 250px);
+  grid-gap: 2rem; }
+
+.php-page__section-3--article {
+  border: 1px solid #E3E3E3;
+  padding: 2rem; }
+  .php-page__section-3--article-1 {
+    border-top: 3px solid #f8961eff; }
+  .php-page__section-3--article-2 {
+    border-top: 3px solid #43aa8bff; }
+  .php-page__section-3--article-3 {
+    border-top: 3px solid #277da1ff; }
+  .php-page__section-3--article-4 {
+    border-top: 3px solid #f94144ff; }
+  .php-page__section-3--article-5 {
+    border-top: 3px solid #4d908eff; }
+  .php-page__section-3--article-6 {
+    border-top: 3px solid #f3722cff; }
+
+.php-page__section-4 {
+  background-image: url("../img/green-pattern.png");
+  width: 100%;
+  height: 30rem;
+  margin: 4rem 0; }
+  .php-page__section-4__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 100%; }
+    @media only screen and (max-width: 768px) {
+      .php-page__section-4__box {
+        flex-direction: column; } }
+  .php-page__section-4--heading {
+    font-size: 3.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    position: relative; }
+    @media only screen and (max-width: 768px) {
+      .php-page__section-4--heading {
+        margin-bottom: 2rem; } }
+    .php-page__section-4--heading > span {
+      font-size: 2.3rem; }
+    .php-page__section-4--heading:last-child::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #E3E3E3;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: rotate(90deg);
+      transition: all 0.2s ease-in-out; }
+      @media only screen and (max-width: 768px) {
+        .php-page__section-4--heading:last-child::after {
+          display: none; } }
+    .php-page__section-4--heading:nth-child(2)::after {
+      content: "";
+      width: 180%;
+      height: 2px;
+      background-color: #E3E3E3;
+      position: absolute;
+      top: 50%;
+      left: 200%;
+      transform: rotate(90deg);
+      transition: all 0.2s ease-in-out; }
+      @media only screen and (max-width: 768px) {
+        .php-page__section-4--heading:nth-child(2)::after {
+          display: none; } }
+
+.php-page__section-5__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.php-page__section-5__box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+  @media only screen and (max-width: 1200px) {
+    .php-page__section-5__box {
+      flex-direction: column; } }
+
+.php-page__section-5--heading {
+  font-size: 8.2rem;
+  font-weight: 400; }
+
+.php-page__section-5--article {
+  width: 21rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative; }
+  @media only screen and (max-width: 1200px) {
+    .php-page__section-5--article {
+      width: 60%;
+      margin: 4rem 0; } }
+  .php-page__section-5--article_heading {
+    font-size: 2.8rem; }
+  .php-page__section-5--article_paragraph {
+    font-size: 1.6rem;
+    text-align: justify; }
+  .php-page__section-5--article:not(:nth-child(1))::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #E3E3E3;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: rotate(90deg);
+    transition: all 0.2s ease-in-out; }
+    @media only screen and (max-width: 1200px) {
+      .php-page__section-5--article:not(:nth-child(1))::after {
+        display: none; } }
+
+.php-page__section-6 {
+  background-image: url("../img/bg-section-6.webp");
+  width: 100%;
+  height: 70rem; }
+  @media only screen and (max-width: 1079px) {
+    .php-page__section-6 {
+      height: 90rem; } }
+  .php-page__section-6--heading {
+    font-size: 3.1rem;
+    color: #fff; }
+  .php-page__section-6--description {
+    font-size: 2.8rem;
+    text-align: justify;
+    color: #fff; }
+  .php-page__section-6_box-1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem; }
+    @media only screen and (max-width: 1079px) {
+      .php-page__section-6_box-1 {
+        margin-top: 0; } }
+  .php-page__section-6_box-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    @media only screen and (max-width: 1079px) {
+      .php-page__section-6_box-2 {
+        flex-direction: column;
+        justify-content: center; } }
+  .php-page__section-6__container {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+  .php-page__section-6--item-1, .php-page__section-6--item-2 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%; }
+  .php-page__section-6--item_description {
+    color: #fff;
+    font-size: 1.6rem; }
+  .php-page__section-6--item_heading {
+    color: #fff;
+    font-size: 2.6rem; }
+  @media only screen and (max-width: 1200px) {
+    .php-page__section-6--img {
+      display: none; } }
+
+.php-page__section-7__container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly; }
+  @media only screen and (max-width: 1079px) {
+    .php-page__section-7__container {
+      flex-direction: column; } }
+
+.php-page__section-7--img {
+  max-width: 100%;
+  width: 40rem; }
+
+.php-page__section-7_description {
+  color: #234;
+  font-size: 1.9rem; }
+
+.php-page__section-7_heading {
+  font-weight: 300;
+  font-size: 5.2rem;
+  line-height: 7rem; }
+
+.php-page__section-7--check {
+  color: #43aa8bff !important;
+  font-size: 1.9rem; }
+
+.php-page__section-7-item {
+  font-size: 1.9rem; }
+
+.php-page__section-8 {
+  background-image: url("../img/green-pattern.png");
+  width: 100%;
+  height: 30rem;
+  margin: 4rem 0; }
+  .php-page__section-8__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 100%; }
+    @media only screen and (max-width: 768px) {
+      .php-page__section-8__box {
+        flex-direction: column; } }
+  .php-page__section-8--heading {
+    font-size: 2.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    position: relative; }
+    @media only screen and (max-width: 768px) {
+      .php-page__section-8--heading {
+        margin-bottom: 2rem; } }
+    .php-page__section-8--heading > span {
+      font-size: 2.3rem; }
+    .php-page__section-8--heading:last-child::after {
+      content: "";
+      width: 140%;
+      height: 2px;
+      background-color: #E3E3E3;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: rotate(90deg);
+      transition: all 0.2s ease-in-out; }
+      @media only screen and (max-width: 768px) {
+        .php-page__section-8--heading:last-child::after {
+          display: none; } }
+    .php-page__section-8--heading:nth-child(2)::after {
+      content: "";
+      width: 80%;
+      height: 2px;
+      background-color: #E3E3E3;
+      position: absolute;
+      top: 50%;
+      left: 120%;
+      transform: rotate(90deg);
+      transition: all 0.2s ease-in-out; }
+      @media only screen and (max-width: 768px) {
+        .php-page__section-8--heading:nth-child(2)::after {
+          display: none; } }
+
+.php-page__section-9 {
+  background-image: url("../img/bg-php-section-9.jpg");
+  width: 100%;
+  height: 60rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #f7f7f7;
+  display: grid;
+  place-items: center; }
+  .php-page__section-9__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .php-page__section-9_heading {
+    font-size: 5.1rem;
+    font-weight: 700; }
+    @media only screen and (max-width: 1079px) {
+      .php-page__section-9_heading {
+        font-size: 4.1rem; } }
+  .php-page__section-9_description {
+    font-size: 1.7rem;
+    width: 70%;
+    font-weight: 300; }
+  .php-page__section-9--box {
+    display: flex;
+    flex-direction: row; }
+    @media only screen and (max-width: 1079px) {
+      .php-page__section-9--box {
+        flex-direction: column; } }
+  .php-page__section-9__check-item {
+    font-weight: 400; }
+  .php-page__section-9--box-item-check {
+    color: #43aa8bff;
+    font-size: 1.9rem; }
+  .php-page__section-9--box-item__check-item {
+    font-size: 1.9rem;
+    font-weight: 400; }
+
+.php-page__section-10 {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 60rem;
+  background-image: url("../img/bg-info-php-10.webp"); }
+  .php-page__section-10__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%; }
+    @media only screen and (max-width: 1079px) {
+      .php-page__section-10__container {
+        flex-direction: column-reverse; } }
+  .php-page__section-10_box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .php-page__section-10_box-2 {
+    max-width: 100%;
+    width: 31rem;
+    height: 23rem; }
+    @media only screen and (max-width: 1079px) {
+      .php-page__section-10_box-2 {
+        height: 23rem; } }
+  .php-page__section-10_heading {
+    color: #fff;
+    font-size: 5.2rem; }
+  .php-page__section-10_description {
+    color: #fff;
+    font-size: 2rem; }
+  .php-page__section-10_link {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #0cf;
+    border: 1px solid #0cf;
+    border-radius: 8px;
+    transition: all ease 500ms;
+    padding: 1rem;
+    margin: 2rem; }
+    .php-page__section-10_link:hover {
+      background-color: #0cf;
+      color: #fff; }
+  .php-page__section-10_help {
+    color: #fff;
+    font-size: 2rem; }
