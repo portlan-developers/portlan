@@ -107,6 +107,12 @@ body {
   background-size: cover;
   background-position: top; }
 
+.services {
+  text-shadow: -13px -1px 15px rgba(0, 0, 0, 0.7);
+  background-image: url(../../img/services_header_bg.jpeg);
+  background-repeat: no-repeat;
+  height: 80vh; }
+
 .header__nav {
   transition: all ease 500ms; }
   @media only screen and (max-width: 768px) {
