@@ -5,16 +5,40 @@ $media-large: 75em;
 $media-md: 51.875em;
 $media-small: 500px;
 .header_container{
+
     background-image: url(../img/header.png);
     width: 100%;
     height: 105vh;
     background-size: cover;
     background-position: top;
 }
+
 .header{
 
     &__nav{
+        @include phone-only{
+            margin: 0;
+            padding: 0; 
+            height: 7rem;
+            position: fixed;
+            top: 0;
+            background-color: $color-white;
+            width: 100%;
+            z-index: 999;
+        }
+        @include tablelt{
+            margin: 0;
+            padding: 0; 
+            height: 7rem;
+            position: fixed;
+            top: 0;
+            background-color: $color-white;
+            width: 100%;
+            z-index: 999;
+        }
+        transition: all ease 500ms;
         &--list{
+            
             display: flex;
             list-style: none;
             align-items: center;
@@ -22,19 +46,21 @@ $media-small: 500px;
             margin: 0rem 10rem ;
         }
         &--item{
+            
             margin-top: 2.2rem;
             &-logo{
                 margin-left: auto;
-                color: $color-white;
+                // color: $color-white;
                  font-size: 5rem;
                  font-weight: 100;
                  letter-spacing: 2px;
-                 font-family: 'Nunito';
             } 
             &-link{
                 &:link, &:visited{
                 text-decoration: none;
                 color: $color-white;
+                // color: #222;
+
                 font-size: 1.8rem;
                 font-weight: 100;
                 padding-bottom: 2rem;
@@ -55,6 +81,9 @@ $media-small: 500px;
                     width: 100%;
                 }
                 &-1{
+                    @include tablelt{
+                        display: none;
+                    }
                     font-size: 1.8rem;
                     font-weight: 100; 
                     transition: all 0.2s;
@@ -69,8 +98,17 @@ $media-small: 500px;
                     }
                 }
                 &-2{
+                    font-family: 'Righteous', cursive;
+                    text-transform: uppercase;
                     color: $color-white;
                     text-decoration: none;
+                    @include phone-only{
+                        color: #fb2c3a;
+                    }
+                    @include tablelt{
+                        color: #fb2c3a;
+                        
+                    }
                 }
                 
             } 
@@ -99,31 +137,11 @@ $media-small: 500px;
     }
 
 }
-.dropdown{
-    display: none;
-}
+
 nav{
     position: relative;
 }
-.active.dropdown{
-    top: 110px;
-    display: block;
-    background-color: $color-white;
-    padding:60px;
-    position: absolute;
-}
-.dropdown-1{
-    left: 500px;
-}
-.dropdown-2{
-    left: 400px;
-}
-.dropdown-3{
-    left: 300px;
-}
-.dropdown-4{
-    left: 200px;
-}
+
 ///////////////////////////////////////////responsive
 .header__nav--item--responsive{
     display: none;
@@ -208,3 +226,152 @@ nav{
     }
 }
 
+.full_header{
+    &.header__nav{
+        margin: 0;
+        padding: 0; 
+        height: 7rem;
+        position: fixed;
+        top: 0;
+        background-color: $color-white;
+        width: 100%;
+        z-index: 999;
+    }
+    &.header{
+        background-color: $color-white;
+    }
+    &.header__nav--item-link{
+        color: #222;
+        &::after{
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: #fb2c3a;
+            position: absolute;
+            top: 79%;
+            left: 0;
+            transition: all 0.2s ease-in-out;
+        }  &:hover::after{
+            width: 100%;
+        }
+    }
+    &.header__nav--item-link-2{
+        color: #fb2c3a;
+    }
+    &.header__nav--item-link-1{
+        border-color: #fb2c3a;
+        color: #fb2c3a;
+        transition: all ease 500ms;
+        border-radius: 8px;
+        &:hover{
+            background-color: #fb2c3a;
+            color: $color-white;
+        }
+    }
+    &.header__nav--list{
+        align-items: center;
+        margin: -2rem 10rem ;
+        
+    }
+    
+}
+.header__nav--list{
+    @include phone-only{
+        align-items: center;
+        margin: -2rem 10rem ;
+    }
+    @include tablelt{
+        align-items: center;
+        margin: -2rem 10rem ;
+    }
+}
+.bars-respansive{
+    margin-top: 1rem;
+    font-size: 6rem;
+    color: #222;
+    display: none;
+
+    @include tablelt{
+        display: block;
+    }
+    @include phone-only{
+        display: block;
+        font-size: 4rem;
+        margin-top: 3rem;
+
+    }
+}
+
+
+
+.bar-md-menu{
+     @include desktop{
+         display: none;
+     }
+     @include big-desktop{
+        display: none;
+    }
+
+    transition: height ease 500ms;
+    @include tablelt{
+        top: 11.4%;
+        display: block;
+    }
+    @include phone-only{
+    top: 8%;
+    display: block;
+
+    }
+    width: 100%;
+    background-color: $color-white;
+    position: fixed;
+    top: 8%;
+    height: 100vh;
+    z-index: 999;
+    &__item{
+        margin: 4rem;
+        list-style: none;
+        &-link{
+            font-size: 2.1rem;
+            text-decoration: none;
+            color: #222;
+            position: relative;
+            transition: all 0.2s ease-in-out;
+
+            &::after{
+                content: "";
+                width: 0%;
+                height: 2px;
+                background-color: #fb2c3a;
+                position: absolute;
+                top: 88%;
+                left: 0;
+                transition: all 0.2s ease-in-out;
+            }  &:hover::after{
+                width: 100%;
+            }
+        }
+        &-about{
+            font-size: 2.1rem;
+            text-decoration: none;
+            color: #fb2c3a;
+            border: 1px solid #fb2c3a;
+            border-radius: 8px;
+            padding: 1rem;
+            transition: all ease 500ms;
+            &:hover{
+                background-color: #fb2c3a;
+                color: $color-white;
+            }
+        }
+    }
+}
+.fa-bars::before{
+    transition: content ease 500ms;
+}
+.open-bars.fa-bars::before{
+    content: "\f00d";
+}
+.hidden{
+    display: none;
+}

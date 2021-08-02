@@ -50,11 +50,19 @@ html{
 	@include phone-only{
 		font-size: 50%;
 	}
+	scroll-behavior: smooth;
+
 }
 
 body{
 	font-family: 'IRANSans';
 	box-sizing: border-box;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.scroll
+{
+	overflow-y: scroll !important;
 }
 
 
