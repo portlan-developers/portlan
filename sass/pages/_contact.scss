@@ -1,0 +1,451 @@
+.contact{
+
+	&__title{
+		&--h{
+			display: block;
+			margin-block-start: 0.83em;
+			margin-block-end: 0.83em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-size: 2.5rem;
+			line-height: 6rem;
+			font-weight: 300;
+			margin: 0 0 20px;
+			position: relative;	
+		}
+		&--p{
+			display: block;
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-size: 1.7rem;
+			line-height: 3.8rem;
+			position: relative;
+			&::before{
+				content: "";
+				//display: block;
+				background-color: $color-green;
+				height: 1px;
+				width: 4rem;
+				position: absolute;
+				top: -50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+	
+	&__span{
+		color: $color-green;
+	}
+
+	&__form{
+		display: flex;
+		flex-direction: column;
+		padding: 6rem;
+
+		&--container{
+			background-color: #fff;
+			margin-top: 2rem;
+			width: 90rem;
+			box-shadow: 0 0 30px 2px #d9d9d9;
+			@media only screen and (max-width: 900px){
+				width: 70%;
+			}
+			@media only screen and (max-width: 400px){
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+label{
+	font: inherit;	
+}
+
+.field{
+	flex: 0 0 48%;
+	position: relative;
+	
+	&--double{
+		display: flex;
+		justify-content: space-between;
+		@media only screen and (max-width:900px){
+		flex-direction: column;}
+	}
+}
+
+
+.form{
+	&__input , &__text{
+		position: relative;
+		font-size: 1.7rem;
+		font-family: inherit;
+		display: block;
+		font-weight: 300;
+		outline: 0;
+		background-color: white;
+		width: 100%;
+		padding: 2.5rem 2rem 1.4rem 6rem;
+		border: 1px solid $color-grey-text;
+		box-sizing: border-box;
+		margin-top: 6px;
+		margin-bottom: 16px;
+		resize: vertical;
+		transition: all 0.2s;
+		cursor: text;
+		text-align: start;
+		
+		&:focus{
+			box-shadow: 0 0 .1rem .1rem rgba($color-green, 1);
+		}
+
+		&:invalid{
+			box-shadow: 0 0 .1rem .1rem rgba(red, 1);
+		}
+
+		&:not(:placeholder-shown) ~ label {
+			font-size: 1.3rem;
+			transform: scale(0.98)  translate(-2% , -30%);
+			padding-right: 1rem;
+		}
+	}
+	&__input:focus  ~ label {
+		font-size: 1.3rem;
+		transform: scale(0.98)  translate(-2% , -30%);
+		padding-right: 1rem;
+		
+	}
+	
+	&__text:focus ~ label {
+		font-size: 1.3rem;
+		transform: scale(0.98)  translate(-2% , -30%);
+		padding-right: 1rem;
+	}
+	&__tooltip{
+		display: none;
+	}
+
+	&__submit{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 5rem;
+	}
+
+	&--submit{
+		background-color: $color-green;
+		color: $color-grey-text;
+		border: 2px solid $color-green;
+		cursor: pointer;
+		line-height: 2.2rem;
+		padding-top: 1.4rem;
+		padding-bottom: 1.4rem;
+		width: 20rem;
+		align-self: center;
+		font-size: xx-large;
+		font-weight: 100;
+		font-family: inherit;
+
+		&:hover{
+			background-color: white;
+			color: $color-green;
+		}
+	}
+
+	&__label{
+		text-indent: 0;
+		font-size: 1.7rem;
+		line-height: 6rem;
+		position: absolute;
+		display: block;
+		color: #a4a8ad;
+		top: 0;
+		left: 0;
+		transition: 0.1s linear;
+		pointer-events: none;
+		text-align: right;
+		z-index: 4;
+		background-color: transparent !important;
+		padding: 1rem 3rem 2rem 1rem;
+		width: 100%;
+		height: 6rem;
+	}
+
+	&__cookies{
+		width: 60%;
+		align-self: center;
+		font-weight: 100;
+		margin-top: 2rem;
+		text-align: center;
+	}
+	&__cookie--text{
+		font-size: 1.6rem ;
+		user-select: none;
+	}
+}
+
+.attach{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	&__tigger{
+		padding-top: 1.5rem;
+		display: flex;
+		text-align: right;
+		font-size: 1.7rem;
+		line-height: 2rem;
+		position: relative;
+		height: 2.4rem;
+		color: #58c344;
+		border: none;
+		background-color: inherit;
+		font-family: inherit;
+		cursor: pointer;
+		
+		&--icon{
+			width: 2rem;
+			height: 2rem;
+			fill: #58c344;
+		}
+	}
+	&__file{
+		padding-top: 2rem;
+		display: none;
+	}
+	&__description{
+		padding-top: 2rem;
+		background-color: #fff;
+		padding-bottom: 5px;
+		font-size: 13px;
+		line-height: 13px;
+		color: #a6aaaf;
+		text-align: right;
+
+	}
+}
+
+.invalid.form__tooltip{
+	display: block;
+	padding: 5px 8px;
+	background: #f83535;
+	color: #fff;
+	font-size: 13px;
+	line-height: 16px;
+	position: absolute;
+	top: 100%;
+	margin-top: -2.5rem;
+	right: 10px;
+	max-width: 96%;
+	z-index: 3;
+	text-align: center;
+	&::before{
+		content: '';  
+		width: 0;  
+		height: 0;  
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-bottom: 11px solid #f83535;
+		position: absolute;  
+		top: -10px; 
+	}
+}
+//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////
+//////////////////////////
+///////
+@mixin phone-only {
+    @media only screen and (max-width: 768px) { @content; }
+  }
+  @mixin tablelt {
+    @media only screen and (max-width: 1079px) { @content; }
+  }
+  @mixin tablet-landscape {
+    @media only screen and (max-width: 900px) { @content; }
+  }
+  @mixin desktop {
+    @media only screen and (max-width: 1200px) { @content; }
+  }
+  @mixin big-desktop {
+    @media only screen and (max-width: 1800px) { @content; }
+  }
+  ///////////////////////////////////////////////////////
+
+.container__contactUs{
+	&--box{
+		width: 70%;
+		&--header{
+			width: 100%;
+			text-align: center;
+			&--green{
+				background-color: #51c336;
+				
+			}
+    		&--blue{
+				background-color: #0cf;
+			}
+		}
+		&--heading{
+			color: $color-white;
+			padding: 2rem;
+			font-weight: 300;
+			font-size: 2.5rem;
+
+		}
+		///////////////////
+		&--main{
+			display: flex;
+			margin-bottom: 8rem; 
+			background-color: $color-white;
+			@include phone-only {
+				display: flex;
+				flex-direction: column;
+			}
+			&--right{
+				flex: 0 0 50%;
+				border: 1px solid rgba($color-heading, .2);
+				border-top: none;
+				&--iran{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					.span-1{
+						color:$color-blue;
+						font-size: 2rem;
+						margin: 2rem 0;
+					}
+					.image-iran{
+						width: 15rem;
+						display: block;
+						border-radius: 8px;
+						margin-bottom: 2rem;
+					}
+				}
+			}
+			&--left{
+				border: 1px solid rgba($color-heading, .2);
+				border-top: none;
+				border-right: none;
+				flex: 0 0 50%;
+				@include desktop{
+					border-right:1px solid rgba($color-heading, .2) ;
+				}
+				&--email{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					height: 100%;
+					.span-2{
+						color: #51c336;
+						font-size: 1.8rem;
+						@include desktop{
+							margin-top: 5rem;
+							
+						}
+					}
+					.span-3{
+						color:$color-blue;
+						font-size: 1.6rem;
+						margin-top: 2rem;
+						@include desktop{
+							margin-bottom: 5rem;
+						}
+					}
+				}
+			}
+			&--1{
+				background-color: $color-white;
+				border: 1px solid rgba($color-heading, .2);
+				font-size: 1.6rem;
+				text-align: center;
+				padding: 7rem 0;
+			}
+		}
+	}
+	/////////////////////////////////////////////////////////////
+	///////////////////////////////////////
+	////////////////////////
+	&--page2{
+		
+		&--div{
+			width: 100%;
+			text-align: center;
+			padding-bottom: 4rem;
+			&--h2{
+				font-size: 4rem;
+				font-weight: 300;
+				
+			}
+		}
+		&--box{
+			display: flex;
+			justify-content: center;
+			@include desktop{
+				display: flex;
+				flex-direction: column;
+			}
+			&--child{
+				display: flex;
+				align-items: top;
+				@include desktop{
+					&:not(:last-child){
+						margin-bottom: 4rem;
+					}
+				}
+				&--figure{
+					 position: relative;
+					margin-left: 3rem;
+					&--image{
+						@include phone-only {
+							width: 10rem;
+						}
+					}
+					&--caption{
+						position: absolute;
+						 left: 50%;
+						 top: 25%;
+						transform: translatex( -50%,);
+						color: $color-white;
+						font-size: 4rem;
+						font-weight: 300;
+					}
+				}
+				&--main{
+					padding-left: 5rem;
+					margin-top: -.8rem;
+					h3{
+						font-size: 2rem;
+						font-weight: 300;
+					}
+					p{
+						font-size: 1.4rem ;
+						font-weight: 300;
+						line-height: 2.5rem;
+					}
+				}
+			}
+		}
+	}
+	&--page3{
+		&--box{
+			text-align: center;
+			width: 70%;
+			&--h3{
+				font-size: 4rem;
+				font-weight: 300;
+				margin-bottom: 4rem;
+			}
+			&--p{
+				font-size: 1.45rem;
+				font-weight: 300;
+				line-height: 3rem;
+			}
+		}
+		
+	}
+}
+
