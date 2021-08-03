@@ -1,4 +1,5 @@
-@import "abstracts/mixin", "abstracts/base",
+@import "abstracts/mixin",
+"abstracts/base",
 "abstracts/colors",
 "components/alert",
 "components/btn",
@@ -10,13 +11,9 @@
 "layout/footer",
 "layout/integrated-cards",
 "pages/home",
-
 "pages/php-development",
+"layout/slider",
 "layout/quote",
 "layout/contact",
-
 "layout/cards",
 "layout/card";
-
-
-
