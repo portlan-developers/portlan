@@ -151,7 +151,7 @@ body {
       height: 2px;
       background-color: #fff;
       position: absolute;
-      top: 100%;
+      top: 130%;
       left: 0;
       transition: all 0.2s ease-in-out; }
     .header__nav--item-link:hover::after {
@@ -186,7 +186,8 @@ body {
           color: #fb2c3a; } }
       @media only screen and (max-width: 1079px) {
         .header__nav--item-link-2 {
-          color: #fb2c3a; } }
+          color: #fb2c3a;
+          margin-top: -1.5rem; } }
   .header__heading {
     display: flex;
     align-items: center;
@@ -276,7 +277,7 @@ nav {
     align-items: center; } }
 
 .bars-respansive {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #222;
   display: none;
   margin-left: 2rem; }
@@ -286,8 +287,7 @@ nav {
   @media only screen and (max-width: 768px) {
     .bars-respansive {
       display: block;
-      font-size: 4rem;
-      font-size: 6rem; } }
+      font-size: 4rem; } }
 
 .bar-md-menu {
   transition: height ease 500ms;
@@ -323,7 +323,7 @@ nav {
         height: 2px;
         background-color: #fb2c3a;
         position: absolute;
-        top: 88%;
+        top: 120%;
         left: 0;
         transition: all 0.2s ease-in-out; }
       .bar-md-menu__item-link:hover::after {
@@ -340,6 +340,9 @@ nav {
         background-color: #fb2c3a;
         color: #fff; }
 
+.fa-bars {
+  font-weight: 400; }
+
 .fa-bars::before {
   transition: content ease 500ms; }
 
@@ -353,18 +356,27 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 2rem;
   align-items: center; }
+  @media only screen and (max-width: 1079px) {
+    .header__nav--list {
+      padding: 0; } }
   @media only screen and (max-width: 768px) {
     .header__nav--list {
-      width: 95%; } }
+      width: 95%;
+      margin-top: 1rem; } }
   .header__nav--list-box {
+    margin-right: 34rem;
     display: flex;
-    width: 58%;
+    width: 45%;
     justify-content: space-around;
     align-items: center; }
     @media only screen and (max-width: 1079px) {
       .header__nav--list-box {
         display: none; } }
+    @media only screen and (max-width: 1200px) {
+      .header__nav--list-box {
+        margin-right: 17rem; } }
 
 .full_header.header__nav {
   margin: 0;
