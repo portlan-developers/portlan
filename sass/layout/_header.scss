@@ -65,7 +65,7 @@ $media-small: 500px;
                     height: 2px;
                     background-color: $color-white;
                     position: absolute;
-                    top: 100%;
+                    top: 130%;
                     left: 0;
                     transition: all 0.2s ease-in-out;
                 }
@@ -106,6 +106,7 @@ $media-small: 500px;
                     }
                     @include tablelt{
                         color: #fb2c3a;
+                        margin-top: -1.5rem;
                         
                     }
                 }
@@ -235,7 +236,7 @@ nav{
     }
 }
 .bars-respansive{
-    font-size: 6rem;
+    font-size: 5rem;
     color: #222;
     display: none;
     margin-left: 2rem;
@@ -246,7 +247,6 @@ nav{
     @include phone-only{
         display: block;
         font-size: 4rem;
-        font-size: 6rem;
 
 
     }
@@ -292,7 +292,7 @@ nav{
                 height: 2px;
                 background-color: #fb2c3a;
                 position: absolute;
-                top: 88%;
+                top: 120%;
                 left: 0;
                 transition: all 0.2s ease-in-out;
             }  &:hover::after{
@@ -314,6 +314,10 @@ nav{
         }
     }
 }
+
+.fa-bars{
+    font-weight: 400;
+}
 .fa-bars::before{
     transition: content ease 500ms;
 }
@@ -331,18 +335,29 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 2rem;
+    @include tablelt{
+        padding: 0;
+    }
     @include phone-only{
         width: 95%;
+        margin-top: 1rem;
     }
+    
     align-items: center;
 
     &-box{
+        margin-right: 34rem;
         display: flex;
-        width: 58%;
+        width: 45%;
         justify-content: space-around;
         align-items: center;
         @include tablelt{
             display: none;
+        }
+        @include desktop{
+            margin-right: 17rem;
+
         }
     }
 }
