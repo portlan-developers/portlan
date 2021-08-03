@@ -1,43 +1,39 @@
 @mixin keyframe_inout {
     @keyframes inout {
         0%{
-            transform: scale(1.1);
+            transform: scale(1.05);
             filter: blur(1px);
         }
+        
         100%{
-            filter: blur(2px);
+            filter: blur(1.5px);
     
             transform: scale(1);
     
         }
     }
     animation-name: inout;
-    animation-duration: 4s;
+    animation-duration: 1s;
     animation-timing-function: ease;
 
 }
 @mixin keyframe_outIn {
     @keyframes outIn {
         0%{
-            background-blend-mode: darken;
             opacity: 0.89;
             transform: scale(1);
-            animation-timing-function: ease;
         
         }
+       
         100%{
-            background-blend-mode: lighten;
-            transform: scale(1.1);
+            transform: scale(1.01);
             opacity: 1;
-            animation-timing-function: ease;
-    
-    
     
         }
     }
     animation-name: outIn;
-    animation-duration: 4s;
-    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
 }
 
 // responsive 

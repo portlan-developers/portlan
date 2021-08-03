@@ -45,13 +45,15 @@
     justify-content: center;
     background-size: cover;
     background-position: center;
+    transition: all ease 500ms;
+
 
 }
 .img{
     display: none;
     position: absolute;
     top: 0;
-    transition: transform ease 4s;
+    transition: all ease 500ms;
     &-title{
         z-index: 99;
         color: rgba(255, 255, 255, 0.705);
@@ -110,7 +112,7 @@
         display: block;
         border-radius: 8px;
         box-shadow: 0 0 1px 1px #eee;
-        transition: all 0.8s;
+        transition: all 500ms;
         @include keyframe_inout;
         @include phone-only{
             display: none;
@@ -121,7 +123,7 @@
         z-index: 99;
         @include keyframe_outIn;
         border-radius: 8px;
-        transition: all 0.8s;
+        transition: all 500ms;
         @include phone-only{
             
             border-radius: 0;
