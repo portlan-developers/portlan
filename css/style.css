@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: IRANSans;
   font-style: normal;
@@ -1487,3 +1488,32 @@ label {
   .php-page__section-10_help {
     color: #fff;
     font-size: 2rem; }
+
+.container__experties {
+  background-position: 50% 50%;
+  padding: 10rem 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; }
+
+.container__webapp {
+  background-position: 50% 50%; }
+
+.container__scale {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url(../../img/services-scale-bg.webp); }
+
+.services__h3 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 5.2rem;
+  line-height: 7rem;
+  margin-bottom: 3rem; }
+
+.servicesــp {
+  font-size: 1.3rem;
+  text-align: center; }

@@ -1,0 +1,56 @@
+.container {
+	&__experties {
+		background-position: 50% 50%;
+		padding: 10rem 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__webapp {
+		background-position: 50% 50%;
+	}
+
+	&__scale {
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-image: url(../../img/services-scale-bg.webp);
+	}
+
+	// &__steps{
+
+	// }
+
+	// &__advantages{
+
+	// }
+
+	// &__security{
+
+	// }
+
+	// &__technologies{
+
+	// }
+
+	// &__marketing{
+
+	// }
+}
+
+.services {
+  &__h3 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 5.2rem;
+	line-height: 7rem;
+	margin-bottom: 3rem;
+  }
+  &ــp{
+	font-size: 1.3rem;
+	text-align: center;
+  }
+}
