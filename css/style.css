@@ -1505,6 +1505,9 @@ label {
   flex-direction: column; }
 
 .container__scale {
+  display: flex;
+  background-size: cover;
+  width: 100%;
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-position: 50% 50%;
@@ -1513,7 +1516,7 @@ label {
 
 .container__security {
   background-position: 50% 50%;
-  padding: 10rem 0;
+  padding: 6rem 0;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -1521,7 +1524,7 @@ label {
 
 .container__technologies {
   background-position: 50% 50%;
-  padding: 10rem 0;
+  padding: 6rem 0;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -1557,31 +1560,50 @@ label {
   font-size: 2rem;
   text-align: center;
   font-weight: 100;
-  width: 60%; }
+  width: 80%; }
   .services__p--right {
     text-align: right; }
   .services__p--marketing {
     font-size: 0.9rem;
     margin-bottom: 1rem; }
 
-.services__ul {
-  font-size: 1.3rem;
-  text-align: center;
-  font-weight: 100; }
-
 .services__webapp--box {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem 3rem;
-  float: none;
-  vertical-align: bottom;
-  text-align: center; }
+  width: 60%; }
+
+.services__webapp--title {
+  width: 100%;
+  margin-left: 0; }
 
 .services__webapp--img {
-  width: 40%;
-  float: left;
-  padding-top: 13rem; }
+  margin-right: 0;
+  vertical-align: bottom;
+  margin-top: 8rem;
+  width: 43%; }
+
+.services__webapp--ul {
+  font-size: 1.3rem;
+  text-align: right;
+  font-weight: 100; }
+
+.services__webapp--li {
+  position: relative;
+  width: 83%;
+  font-size: 1.3rem;
+  text-align: right;
+  font-weight: 100;
+  padding: 1.5rem;
+  padding-right: 3rem;
+  list-style: none; }
+  .services__webapp--li::before {
+    content: "";
+    background-image: url(../../img/green-tik.png);
+    top: 1.8rem;
+    right: 0.8rem;
+    display: block;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.1rem; }
 
 .services__marketing--title {
   font-weight: 300;
@@ -1691,22 +1713,3 @@ label {
   font-weight: 200;
   background: url(../../img/security-card.png) no-repeat 0% 0%;
   background-size: 2.5rem; }
-
-.li--webapp {
-  position: relative;
-  font-size: 1.3rem;
-  text-align: right;
-  font-weight: 100;
-  width: 50%;
-  padding: 1.5rem;
-  padding-right: 6rem;
-  list-style: none; }
-  .li--webapp::before {
-    content: "";
-    background-image: url(../../img/green-tik.png);
-    top: 2rem;
-    right: 3rem;
-    display: block;
-    position: absolute;
-    width: 1.5rem;
-    height: 1.1rem; }
