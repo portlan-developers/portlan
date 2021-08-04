@@ -41,17 +41,17 @@
         color: white;
     }
     &--1 {
-        transition: all 1s;
+        transition: all ease 1s;
         width: 613px;
         height: 450px;
     }
     &--2 {
-        transition: all 1s;
+        transition: all ease 1s;
         width: 613px;
         height: 450px;
     }
     &--3 {
-        transition: all 1s;
+        transition: all ease 1s;
         width: 613px;
         height: 450px;
     }
@@ -65,6 +65,7 @@
         background-image: linear-gradient(to right, rgba(146, 177, 199, 0.8), rgba(87, 188, 255, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/bg-mobile-app-development.jpg?itok=8cZ7Q-l3");
     }
     &__box {
+        transition: all ease 1s;
         text-align: center;
         margin: auto 0px;
         padding: 46px;
