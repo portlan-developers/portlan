@@ -1511,9 +1511,26 @@ label {
   background-repeat: no-repeat;
   background-image: url(../../img/services-scale-bg.webp); }
 
+.container__security {
+  background-position: 50% 50%;
+  padding: 10rem 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; }
+
+.container__technologies {
+  background-position: 50% 50%;
+  padding: 10rem 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
 .container__marketing {
   width: 100%;
-  height: 35rem;
+  height: 45rem;
   background-image: url(../../img/services-marketing.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1525,6 +1542,7 @@ label {
   justify-content: center; }
 
 .services__h3 {
+  color: #234;
   margin: 0;
   font-weight: 300;
   font-size: 5.2rem;
@@ -1535,6 +1553,7 @@ label {
     margin-bottom: 1rem; }
 
 .services__p {
+  color: #234;
   font-size: 2rem;
   text-align: center;
   font-weight: 100;
@@ -1571,22 +1590,24 @@ label {
   color: #fff; }
 
 .services__marketing--box {
-  margin-top: 3rem;
+  margin-top: 5rem;
   background-color: #fff;
-  width: 60%;
-  height: 52%;
+  width: 50%;
+  height: 49%;
   display: flex; }
 
 .services__marketing--img {
   display: inline-block;
   height: 15rem;
-  width: 35rem;
-  padding: 1rem; }
+  width: 37rem;
+  margin: 1.6rem; }
 
 .services__marketing--text {
+  padding-right: 3rem;
   width: 50%;
-  margin: 2rem;
-  line-height: 2.5rem; }
+  margin: 1rem;
+  line-height: 2.5rem;
+  margin-top: 3rem; }
 
 .services__btn {
   color: #53c537;
@@ -1603,6 +1624,73 @@ label {
   .services__btn:hover {
     background-color: #53c537;
     color: #fff; }
+
+.services__technologies--box {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.services__technologies--brand {
+  background: #f7f7f7;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  height: 17rem;
+  width: 17rem;
+  line-height: 13rem;
+  margin: 3rem 1.5rem 3rem 1.5rem;
+  display: flex;
+  align-self: center;
+  justify-self: center; }
+
+.services__technologies--img {
+  display: inline-block;
+  width: 11rem;
+  height: 11rem; }
+
+.services__security--box {
+  width: 100rem;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  border-color: #eee #aaa #aaa #eee;
+  align-self: center;
+  justify-self: center;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.services__security--cardbox {
+  margin: 3px 3px;
+  border: 3px solid;
+  border-color: #777 #eee #eee #777;
+  border-radius: 5px;
+  text-align: right;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.5) 40%, rgba(0, 0, 0, 0.2) 100%); }
+
+.services__security--card {
+  width: 32rem;
+  border: 1px solid;
+  border-color: #eee #777 #777 #eee;
+  border-radius: 5px;
+  padding: 3rem;
+  padding-right: 4rem;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.5) 40%, rgba(0, 0, 0, 0.2) 100%, url(../../img/security-card-bg.jpg)); }
+
+.services__security--h4 {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 500; }
+
+.services__security--ul {
+  text-align: right;
+  margin-right: 3rem;
+  font-size: 1rem;
+  display: block;
+  font-weight: 200;
+  background: url(../../img/security-card.png) no-repeat 0% 0%;
+  background-size: 2.5rem; }
 
 .li--webapp {
   position: relative;
