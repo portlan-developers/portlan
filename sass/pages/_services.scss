@@ -28,13 +28,25 @@
 		background-image: url(../../img/services-scale-bg.webp);
 	}
 
-	// &__steps{
+	&__steps{
+		background-position: 50% 50%;
+		padding: 10rem 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
 
-	// }
-
-	// &__advantages{
-
-	// }
+	&__advantages{
+		background-position: 50% 50%;
+		padding: 10rem 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		background-image: url(../../img/services-advantages-bg.webp);
+		background-size: cover;
+	}
 
 	&__security{
 		background-position: 50% 50%;
@@ -47,7 +59,7 @@
 
 	&__technologies{
 		background-position: 50% 50%;
-		padding: 6rem 0;
+		padding: 10rem 0;
 		align-items: center;
 		justify-content: center;
 		display: flex;
@@ -88,9 +100,10 @@
 		font-size: 2rem;
 		text-align: center;
 		font-weight: 100;
-		width: 80%;
+		width: 60%;
 		&--right{
 			text-align: right;
+			width: 80%;
 		}
 		&--marketing{
 			font-size: 0.9rem;
@@ -112,6 +125,7 @@
 			vertical-align: bottom;
 			margin-top: 8rem;
 			width: 43%;
+			height: 350px;
 		}
 		&--ul{
 			font-size: 1.3rem;
@@ -268,5 +282,36 @@
 			background-size: 2.5rem;
 		}
 	}
+	&__advantages{
+		&--box{
+			display: flex;
+			margin-top: 8rem;
+			grid-gap: 4rem;
+		}
+		&--card{
+			width: 35rem;
+			height: 20rem;
+			display: block;
+			padding: 2rem;
+			border: 2px solid #E3E3E3;
+			border-top: 5px solid $color-green;
+			background-color: #fff;
+		}
+		&--h4{
+			font-size: 3.2rem;
+			font-weight: 300;
+			margin: 0 1rem 1rem 1rem;
+		}
+		&--p{
+			font-size: 1.2rem;
+			font-weight: 100;
+			margin-right: 0 1rem 1rem 1rem;
+		}
+	}
+	// &__steps{
+	// 	&--box{
+
+	// 	}
+	// }
 }
 
