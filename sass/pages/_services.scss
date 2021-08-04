@@ -151,15 +151,18 @@
 		&--box{
 			margin-top: 5rem; 
 			background-color: #fff;
-			width: 50%;
+			width: 40%;
 			height: 49%;
 			display: flex;
 		}
 		&--img{
-			display: inline-block;
-			height: 15rem;
-			width: 37rem;
-			margin: 1.6rem;
+			display: block;
+			float: left;
+			width: 80%;
+			height: 99%;
+			padding: 1rem;
+
+
 		}
 		&--text{
 			padding-right: 3rem;
