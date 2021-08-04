@@ -38,6 +38,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transition: all ease 1s;
+	scroll-behavior: smooth;
+
   }
   &__scroll::-webkit-scrollbar {
     display: none;
