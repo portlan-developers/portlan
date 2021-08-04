@@ -1758,3 +1758,32 @@ label {
   font-size: 1.2rem;
   font-weight: 100;
   margin-right: 0 1rem 1rem 1rem; }
+
+.services__steps--boxs {
+  width: min-content;
+  display: flex;
+  margin-top: 5rem;
+  grid-gap: 17rem; }
+
+.services__steps--box {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  align-items: center;
+  justify-content: center; }
+
+.services__steps--icon {
+  height: 12rem;
+  width: 12rem;
+  fill: #53c537;
+  margin-bottom: 1.5rem; }
+
+.services__steps--h4 {
+  margin-bottom: 1rem;
+  font-size: 3.2rem;
+  font-weight: 300; }
+
+.services__steps--p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 100; }

@@ -308,10 +308,37 @@
 			margin-right: 0 1rem 1rem 1rem;
 		}
 	}
-	// &__steps{
-	// 	&--box{
+	&__steps{
+		&--boxs{
+			width: min-content;
+			display: flex;
+			margin-top: 5rem;
+			grid-gap: 17rem;
+		}
+		&--box{
+			display: flex;
+			flex-direction: column;
+			width: 50rem;
+			align-items: center;
+			justify-content: center;
 
-	// 	}
-	// }
+		}
+		&--icon{
+			height: 12rem;
+			width: 12rem;
+			fill: $color-green;
+			margin-bottom: 1.5rem;
+		}
+		&--h4{
+			margin-bottom: 1rem;
+			font-size: 3.2rem;
+			font-weight: 300;
+		}
+		&--p{
+			text-align: center;
+			font-size: 1.2rem;
+			font-weight: 100;
+		}
+	}
 }
 
