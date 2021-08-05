@@ -22,22 +22,21 @@ $media-small: 500px;
 }
 
 .header{
-
+    width: 100%;
     &__nav{
         @include phone-only{
-            margin: 0;
-            padding: 0; 
             height: 7rem;
             position: fixed;
             top: 0;
+            left: 0;
             background-color: $color-white;
             width: 100%;
             z-index: 999;
         }
         @include tablelt{
-            margin: 0;
-            padding: 0; 
             height: 7rem;
+            left: 0;
+
             position: fixed;
             top: 0;
             background-color: $color-white;
@@ -46,18 +45,14 @@ $media-small: 500px;
         }
         transition: all ease 500ms;
         &--list{
-            
+            width: 100%;
             display: flex;
-            list-style: none;
             align-items: center;
-            align-content: center;
-            margin: 0rem 10rem ;
+            align-content: space-between;
         }
         &--item{
             
-            margin-top: 2.2rem;
             &-logo{
-                margin-left: auto;
                 // color: $color-white;
                  font-size: 5rem;
                  font-weight: 100;
@@ -67,12 +62,9 @@ $media-small: 500px;
                 &:link, &:visited{
                 text-decoration: none;
                 color: $color-white;
-                // color: #222;
-
+                display: block;
                 font-size: 1.8rem;
                 font-weight: 100;
-                padding-bottom: 2rem;
-                margin: 3rem 3rem;
                 position: relative
                 }
                 &::after{
@@ -81,7 +73,7 @@ $media-small: 500px;
                     height: 2px;
                     background-color: $color-white;
                     position: absolute;
-                    top: 100%;
+                    top: 130%;
                     left: 0;
                     transition: all 0.2s ease-in-out;
                 }
@@ -92,29 +84,37 @@ $media-small: 500px;
                     @include tablelt{
                         display: none;
                     }
+                display: block;
+
                     font-size: 1.8rem;
                     font-weight: 100; 
                     transition: all 0.2s;
                     color: $color-white;
                     text-decoration: none;
                     border: 2px solid $color-white;
-                    padding: 0.4rem 3.2rem;
-                    border-radius:5px;
+                    border-radius:8px;
+                    margin-left: 2rem;
+                    padding: 5px;
+
                     &:hover{
                         color: $color-blue;
                         background-color: $color-white;
                     }
                 }
                 &-2{
+                    display: block;
                     font-family: 'Righteous', cursive;
                     text-transform: uppercase;
                     color: $color-white;
                     text-decoration: none;
+                    font-size: 3.3rem;
+                    margin-right: 1rem;
                     @include phone-only{
                         color: #fb2c3a;
                     }
                     @include tablelt{
                         color: #fb2c3a;
+                        margin-top: -1.5rem;
                         
                     }
                 }
@@ -160,7 +160,7 @@ nav{
     }
     .header__nav{
         &--list{
-            margin: 0 5rem;
+            display: flex;
         }
         &--menu{
             width: 35px;
@@ -234,70 +234,20 @@ nav{
     }
 }
 
-.full_header{
-    &.header__nav{
-        margin: 0;
-        padding: 0; 
-        height: 7rem;
-        position: fixed;
-        top: 0;
-        background-color: $color-white;
-        width: 100%;
-        z-index: 999;
-    }
-    &.header{
-        background-color: $color-white;
-    }
-    &.header__nav--item-link{
-        color: #222;
-        &::after{
-            content: "";
-            width: 0%;
-            height: 2px;
-            background-color: #fb2c3a;
-            position: absolute;
-            top: 79%;
-            left: 0;
-            transition: all 0.2s ease-in-out;
-        }  &:hover::after{
-            width: 100%;
-        }
-    }
-    &.header__nav--item-link-2{
-        color: #fb2c3a;
-    }
-    &.header__nav--item-link-1{
-        border-color: #fb2c3a;
-        color: #fb2c3a;
-        transition: all ease 500ms;
-        border-radius: 8px;
-        &:hover{
-            background-color: #fb2c3a;
-            color: $color-white;
-        }
-    }
-    &.header__nav--list{
-        align-items: center;
-        margin: -2rem 10rem ;
-        
-    }
-    
-}
+
 .header__nav--list{
     @include phone-only{
         align-items: center;
-        margin: -2rem 10rem ;
     }
     @include tablelt{
         align-items: center;
-        margin: -2rem 10rem ;
     }
 }
 .bars-respansive{
-    margin-top: 1rem;
-    font-size: 6rem;
+    font-size: 5rem;
     color: #222;
     display: none;
+    margin-left: 2rem;
 
     @include tablelt{
         display: block;
@@ -305,7 +255,7 @@ nav{
     @include phone-only{
         display: block;
         font-size: 4rem;
-        margin-top: 3rem;
+
 
     }
 }
@@ -313,9 +263,7 @@ nav{
 
 
 .bar-md-menu{
-     @include desktop{
-         display: none;
-     }
+     
      @include big-desktop{
         display: none;
     }
@@ -330,11 +278,11 @@ nav{
     display: block;
 
     }
+    height: 100vh;
     width: 100%;
     background-color: $color-white;
     position: fixed;
     top: 8%;
-    height: 100vh;
     z-index: 999;
     &__item{
         margin: 4rem;
@@ -352,7 +300,7 @@ nav{
                 height: 2px;
                 background-color: #fb2c3a;
                 position: absolute;
-                top: 88%;
+                top: 120%;
                 left: 0;
                 transition: all 0.2s ease-in-out;
             }  &:hover::after{
@@ -374,6 +322,10 @@ nav{
         }
     }
 }
+
+.fa-bars{
+    font-weight: 400;
+}
 .fa-bars::before{
     transition: content ease 500ms;
 }
@@ -382,4 +334,100 @@ nav{
 }
 .hidden{
     display: none;
+}
+
+
+
+// update header
+.header__nav--list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    @include tablelt{
+        padding: 0;
+    }
+    @include phone-only{
+        width: 95%;
+        margin-top: 1rem;
+    }
+    
+    align-items: center;
+
+    &-box{
+        margin-right: 34rem;
+        display: flex;
+        width: 45%;
+        justify-content: space-around;
+        align-items: center;
+        @include tablelt{
+            display: none;
+        }
+        @include desktop{
+            margin-right: 17rem;
+
+        }
+    }
+}
+
+
+
+
+
+.full_header{
+    &.header__nav{
+        margin: 0;
+        padding: 0; 
+        height: 7rem;
+        position: fixed;
+        top: 0;
+        background-color: $color-white;
+        width: 100%;
+        z-index: 999;
+    }
+    &.header{
+        background-color: $color-white;
+    }
+    &.header__nav--list-box{
+    @include tablelt{
+            display: none;
+        }
+        
+        
+        
+    }
+    &.header__nav--item-link-2{
+        color: #fb2c3a;
+    }
+    &.header__nav--item-link-1{
+        border-color: #fb2c3a;
+        color: #fb2c3a;
+        transition: all ease 500ms;
+        border-radius: 8px;
+        &:hover{
+            background-color: #fb2c3a;
+            color: $color-white;
+        }
+    }
+    &.header__nav--list{
+        align-items: center;
+
+        
+    }
+    &.header__nav--item-link{
+        color: #222;
+        &::after{
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: #fb2c3a;
+            position: absolute;
+            top: 79%;
+            left: 0;
+            transition: all 0.2s ease-in-out;
+        }  &:hover::after{
+            width: 100%;
+        }
+    }
+    
 }

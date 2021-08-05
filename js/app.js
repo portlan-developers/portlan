@@ -52,3 +52,33 @@ document.addEventListener('scroll', function (){
 })
 
 
+
+
+// scroll lang
+
+const slider = document.querySelector(".slider__scroll")
+slider.scrollLeft = -819
+function overflowplus(i) {
+    slider.scrollLeft += i
+}
+
+function overflow() {
+    var active = true
+    if (active) {
+        if (slider.scrollLeft <= 0  ) {
+            overflowplus(91)
+            
+            if (slider.scrollLeft >= 0) {
+                slider.scrollLeft = -819
+            }
+            
+        }
+    }
+        
+    
+    
+  
+    
+}
+overflow()
+setInterval('overflow()', 1000);
