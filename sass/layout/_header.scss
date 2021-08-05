@@ -14,11 +14,11 @@ $media-small: 500px;
 
 }
 
-.services{
-        text-shadow: -13px -1px 15px rgba(0, 0, 0, 0.7);
-        background-image: url(../../img/services_header_bg.jpeg);
-        background-repeat: no-repeat;
-        height: 50rem;
+.services__header--customize{
+    text-shadow: -13px -1px 15px rgba(0, 0, 0, 0.7);
+    background-image: url(../../img/services_header_bg.jpeg);
+    background-repeat: no-repeat;
+    height: 50rem;
 }
 
 .header{
