@@ -1,0 +1,395 @@
+.container {
+	&__experties {
+		background-position: 50% 50%;
+		padding: 10rem 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__webapp {
+		background-position: 50% 50%;
+		padding: 1rem 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__scale {
+		display: flex;
+		flex-direction: column;
+		background-size: cover;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding-top: 5rem;
+		padding-bottom: 10rem;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-image: url(../../img/services-scale-bg.webp);
+	}
+
+	&__steps{
+		background-position: 50% 50%;
+		padding: 10rem 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__advantages{
+		background-position: 50% 50%;
+		padding: 10rem 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		background-image: url(../../img/services-advantages-bg.webp);
+		background-size: cover;
+	}
+
+	&__security{
+		background-position: 50% 50%;
+		padding: 6rem 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__technologies{
+		background-position: 50% 50%;
+		padding: 10rem 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	&__marketing{
+		width: 100%;
+		height: 45rem;
+		background-image: url(../../img/services-marketing.webp);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		box-sizing: border-box;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.services {
+	&__h3 {
+		color: #234;
+		margin: 0;
+		font-weight: 300;
+		font-size: 5.2rem;
+		line-height: 7rem;
+		margin-bottom: 3rem;
+		&--marketing{
+			font-size: 1.9rem;
+			margin-bottom: 1rem;
+		}
+	}
+	&__p{
+		color: #234;
+		font-size: 2rem;
+		text-align: center;
+		font-weight: 100;
+		width: 60%;
+		&--right{
+			text-align: right;
+			width: 80%;
+		}
+		&--marketing{
+			font-size: 0.9rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__webapp{
+		&--box{
+			display: flex;
+			width: 60%;
+		}
+		&--title{
+			width: 100%;
+			margin-left: 0;
+		}
+		&--img{
+			margin-right: 0;
+			vertical-align: bottom;
+			margin-top: 8rem;
+			width: 43%;
+			height: 350px;
+		}
+		&--ul{
+			font-size: 1.3rem;
+			text-align: right;
+			font-weight: 100;
+		}
+		&--li{
+			position: relative;
+			width: 83%;
+			font-size: 1.3rem;
+			text-align: right;
+			font-weight: 100;
+			padding: 1.5rem;
+			padding-right: 3rem;
+			list-style: none;
+			&::before{
+				content: "";
+				background-image: url(../../img/green-tik.png);
+				top: 1.8rem;
+				right: 0.8rem;
+				display: block;
+				position: absolute;
+				width: 1.5rem;
+				height: 1.1rem;
+				
+			}
+		}
+	}
+
+	&__marketing{
+		&--title{
+			font-weight: 300;
+			font-size: 3.9rem;
+			line-height: 3.9rem;
+			color: #fff;
+		}
+		&--box{
+			margin-top: 5rem; 
+			background-color: #fff;
+			width: 40%;
+			height: 49%;
+			display: flex;
+		}
+		&--img{
+			display: block;
+			float: left;
+			width: 80%;
+			height: 99%;
+			padding: 1rem;
+
+
+		}
+		&--text{
+			padding-right: 3rem;
+			width: 50%;
+			margin: 1rem;
+			line-height: 2.5rem;
+			margin-top: 3rem;
+		}
+		
+	}
+	&__btn{
+		color: $color-green;
+		border: 1px solid $color-green;
+		cursor: pointer;
+		line-height: 2.2rem;
+		padding: 0.5rem 3rem;
+		align-self: center;
+		font-weight: 100;
+		font-family: inherit;
+		text-decoration: none;
+		margin-bottom: 1rem;
+		font-size: larger;
+		&:hover{
+			background-color: $color-green;
+			color: #fff;
+		}
+	}
+
+	&__technologies{
+		&--box{
+			padding-top: 3rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&--brand{
+			background: #f7f7f7;
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+			padding: 3rem;
+			height: 17rem;
+			width: 17rem;
+			line-height: 13rem;
+			margin: 3rem 1.5rem 3rem 1.5rem;
+			display: flex;
+			align-self: center;
+			justify-self: center;
+		}
+		&--img{
+			display: inline-block;
+			width: 11rem;
+			height: 11rem;
+		}
+	}
+	&__security{
+		&--box{
+			width: 100rem;
+			margin: 0 5px;
+			display: flex;
+			flex-direction: row;
+			border: 1px solid;
+			border-color: #eee #aaa #aaa #eee;
+			align-self: center;
+			justify-self: center;
+			background-color:rgba(0, 0, 0, 0.2);
+		}
+		&--cardbox{
+			margin: 3px 3px;
+			border: 3px solid;
+			border-color: #777 #eee #eee #777;
+			border-radius: 5px;
+			text-align: right;
+			background: linear-gradient(135deg
+		    ,rgba(255,255,255,.1) 0,rgba(255,255,255,.5) 40%,rgba(0,0,0,.2) 100% );
+			
+			
+		}
+		&--card{
+			width: 32rem;
+			border: 1px solid;
+			border-color: #eee #777 #777 #eee;
+			border-radius: 5px;
+			padding: 3rem;
+			padding-right: 4rem;
+			height: 100%;
+			background: linear-gradient(135deg
+		    ,rgba(255,255,255,.1) 0,rgba(255,255,255,.5) 40%,rgba(0,0,0,.2) 100% , url(../../img/security-card-bg.jpg));
+			
+
+		}
+		&--h4{
+			font-size: 3rem;
+			margin-top: 0;
+			margin-bottom: 2rem;
+			font-weight: 500;
+		}
+		&--ul{
+			text-align: right;
+			margin-right: 3rem;
+			font-size: 1rem;
+			display: block;
+			font-weight: 200;
+			background: url(../../img/security-card.png) no-repeat 0% 0%;
+			background-size: 2.5rem;
+		}
+	}
+	&__advantages{
+		&--box{
+			display: flex;
+			margin-top: 8rem;
+			grid-gap: 4rem;
+		}
+		&--card{
+			width: 35rem;
+			height: 20rem;
+			display: block;
+			padding: 2rem;
+			border: 2px solid #E3E3E3;
+			border-top: 5px solid $color-green;
+			background-color: #fff;
+		}
+		&--h4{
+			font-size: 3.2rem;
+			font-weight: 300;
+			margin: 0 1rem 1rem 1rem;
+		}
+		&--p{
+			font-size: 1.2rem;
+			font-weight: 100;
+			margin-right: 0 1rem 1rem 1rem;
+		}
+	}
+	&__steps{
+		&--boxs{
+			width: min-content;
+			display: flex;
+			margin-top: 5rem;
+			grid-gap: 17rem;
+		}
+		&--box{
+			display: flex;
+			flex-direction: column;
+			width: 50rem;
+			align-items: center;
+			justify-content: center;
+
+		}
+		&--icon{
+			height: 12rem;
+			width: 12rem;
+			fill: $color-green;
+			margin-bottom: 1.5rem;
+		}
+		&--h4{
+			margin-bottom: 1rem;
+			font-size: 3.2rem;
+			font-weight: 300;
+		}
+		&--p{
+			text-align: center;
+			font-size: 1.2rem;
+			font-weight: 100;
+		}
+	}
+	&__scale{
+		&--box{
+			width: 95%;
+			margin-top: 10rem;
+			color: #fff;
+			margin-right: 2rem;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(50rem , 1fr));
+			grid-gap: 5rem;
+			
+		}
+		&--card{
+			display: flex;
+			flex-direction: column;
+			margin-right: 10rem;
+		}
+		&--item{
+			margin-bottom: 30rem;
+		}
+		&--icard{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transform: translate(0% , -10%);
+			background: url(../../img/speedmetr-hand.png) 50% 50% no-repeat;
+			background-size: contain;
+		}
+		&--h4{
+			font-weight: 300;
+			font-size: 3.2rem;
+			color: $color-green;
+			margin-bottom: 1rem;
+			text-align: right;
+			width: 80%;
+			&::before{
+				content: ".";
+				color: $color-green;
+				font-size: 8rem;
+
+			}
+		}
+		&--p{
+			text-align: right;
+			font-size: 1.2rem;
+			font-weight: 100;
+			width: 82%;
+		}
+	}
+}
+
