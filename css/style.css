@@ -1506,9 +1506,12 @@ label {
 
 .container__scale {
   display: flex;
+  flex-direction: column;
   background-size: cover;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 10rem;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1787,3 +1790,46 @@ label {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 100; }
+
+.services__scale--box {
+  width: 95%;
+  margin-top: 10rem;
+  color: #fff;
+  margin-right: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+  grid-gap: 5rem; }
+
+.services__scale--card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem; }
+
+.services__scale--item {
+  margin-bottom: 30rem; }
+
+.services__scale--icard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0%, -10%);
+  background: url(../../img/speedmetr-hand.png) 50% 50% no-repeat;
+  background-size: contain; }
+
+.services__scale--h4 {
+  font-weight: 300;
+  font-size: 3.2rem;
+  color: #53c537;
+  margin-bottom: 1rem;
+  text-align: right;
+  width: 80%; }
+  .services__scale--h4::before {
+    content: ".";
+    color: #53c537;
+    font-size: 8rem; }
+
+.services__scale--p {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 100;
+  width: 82%; }
