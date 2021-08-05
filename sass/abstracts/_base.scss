@@ -45,6 +45,49 @@ html {
     }
     scroll-behavior: smooth;
 }
+<<<<<<< HEAD
+=======
+.scroll
+{
+	overflow-y: scroll !important;
+}
+
+
+
+.container{
+	&__contactUs{
+		background-image: url(../img/xcontacts-decoration.jpg.pagespeed.ic.N13xxM5moo.jpg);
+		background-position: 100% 115% ;
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content:  flex-start;
+		align-items:center ;
+		flex-direction: column;
+		padding-bottom: 25rem;
+		@include desktop{
+			margin-bottom: 10rem;
+		}
+		&--page2{
+			width: 100%;
+			margin-top: -15rem;
+			margin-bottom: 10rem;
+			
+		}
+		&--page3{
+			width: 100%;
+			padding-bottom: 10rem;
+			display: flex;
+			justify-content: center;
+		}
+	}
+	width: 100%;
+	&__header{
+		background-image: url(./img/header.png);
+		height: 105vh;
+		background-size: cover;
+		background-position: top;
+	}
+>>>>>>> dc271ae36f11476d19af1dc10a59414f10cbe51d
 
 body {
     font-family: 'IRANSans';
