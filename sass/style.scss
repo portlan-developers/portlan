@@ -1,4 +1,5 @@
-@import "abstracts/mixin",
+@import 
+"abstracts/mixin",
 "abstracts/base",
 "abstracts/colors",
 "components/alert",
@@ -15,11 +16,10 @@
 "pages/contact",
 
 "pages/php-development",
-<<<<<<< HEAD
-"pages/about",
-=======
 
->>>>>>> dc271ae36f11476d19af1dc10a59414f10cbe51d
+"pages/about",
+"pages/login",
+
 "layout/slider",
 "layout/quote",
 "layout/contact",
