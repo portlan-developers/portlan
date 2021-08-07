@@ -16,7 +16,7 @@
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	&__steps{
 		background-position: 50% 50%;
 		padding: 10rem 0;
@@ -54,20 +54,6 @@
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-	}
-
-	&__marketing{
-		width: 100%;
-		height: 45rem;
-		background-image: url(../../img/services-marketing.webp);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-		box-sizing: border-box;
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 	}
 }
 
@@ -144,55 +130,6 @@
 		}
 	}
 
-	&__marketing{
-		&--title{
-			font-weight: 300;
-			font-size: 3.9rem;
-			line-height: 3.9rem;
-			color: #fff;
-		}
-		&--box{
-			margin-top: 5rem; 
-			background-color: #fff;
-			width: 40%;
-			height: 49%;
-			display: flex;
-		}
-		&--img{
-			display: block;
-			float: left;
-			width: 80%;
-			height: 99%;
-			padding: 1rem;
-
-
-		}
-		&--text{
-			padding-right: 3rem;
-			width: 50%;
-			margin: 1rem;
-			line-height: 2.5rem;
-			margin-top: 3rem;
-		}
-		
-	}
-	&__btn{
-		color: $color-green;
-		border: 1px solid $color-green;
-		cursor: pointer;
-		line-height: 2.2rem;
-		padding: 0.5rem 3rem;
-		align-self: center;
-		font-weight: 100;
-		font-family: inherit;
-		text-decoration: none;
-		margin-bottom: 1rem;
-		font-size: larger;
-		&:hover{
-			background-color: $color-green;
-			color: #fff;
-		}
-	}
 
 	&__technologies{
 		&--box{
@@ -327,54 +264,6 @@
 			text-align: center;
 			font-size: 1.2rem;
 			font-weight: 100;
-		}
-	}
-	&__scale{
-		&--box{
-			width: 95%;
-			margin-top: 10rem;
-			color: #fff;
-			margin-right: 2rem;
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(50rem , 1fr));
-			grid-gap: 5rem;
-			
-		}
-		&--card{
-			display: flex;
-			flex-direction: column;
-			margin-right: 10rem;
-		}
-		&--item{
-			margin-bottom: 30rem;
-		}
-		&--icard{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			transform: translate(0% , -10%);
-			background: url(../../img/speedmetr-hand.png) 50% 50% no-repeat;
-			background-size: contain;
-		}
-		&--h4{
-			font-weight: 300;
-			font-size: 3.2rem;
-			color: $color-green;
-			margin-bottom: 1rem;
-			text-align: right;
-			width: 80%;
-			&::before{
-				content: ".";
-				color: $color-green;
-				font-size: 8rem;
-
-			}
-		}
-		&--p{
-			text-align: right;
-			font-size: 1.2rem;
-			font-weight: 100;
-			width: 82%;
 		}
 	}
 }
