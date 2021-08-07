@@ -12,7 +12,7 @@
 <body class="scroll">
     <section class="container__contact">
         <div class="contact__title">
-            <h2 class="contact__title--h">وارد شوید</h2>
+            <h2 class="contact__title--h">ثبت نام کنید</h2>
         </div>
         <div class="contact__title">
             <p class="contact__title--p">به سادگی با پورتلن</p>
@@ -27,11 +27,25 @@
                         <label class="form__label" for="fullName">نام  کاربری</label>
                     </div>
                     <div class="field">
-                        <input type="text" name="companyName" class="form__input input-check" id="companyName" placeholder=" ">
+                        <input type="email" name="fullName" class="form__input input-check" id="fUllName" placeholder=" ">
+                        <span class="form__tooltip">  ایمیل خود را وارد کنید</span>
+                        <span class="form__tooltip-alert"> ایمیل  کمتر از حد مجاز است </span>
+                        <label class="form__label" for="fullName">  ایمیل</label>
+                    </div>
+                    <div class="field">
+                        <input type="password" name="companyName" class="form__input input-check" id="companyName" placeholder=" ">
                         <span class="form__tooltip">رمز عبور  را وارد کنید</span>
                         <span class="form__tooltip-alert">  رمز عبور کمتر از حد مجاز است </span>
 
                         <label class="form__label" for="companyName">رمز عبور</label>
+
+                    </div>
+                    <div class="field">
+                        <input type="password" name="companyName" class="form__input input-check" id="companyName" placeholder=" ">
+                        <span class="form__tooltip">رمز عبور  را وارد کنید</span>
+                        <span class="form__tooltip-alert">  رمز عبور کمتر از حد مجاز است </span>
+
+                        <label class="form__label" for="companyName"> تکرار رمز عبور </label>
 
                     </div>
                 </div>
@@ -40,7 +54,7 @@
 
 
                 <div class="form__submit">
-                    <button type="submit" class="btn--login">ورود</button>
+                    <button type="submit" class="btn--register">ثبت نام</button>
 
                     <!-- <div class="form__cookies">
                         <p class="form__cookie--text"> با ثبت این فرم،رضایت می دهم تا پورتلن داده های شخصی من را طبق <span class="contact__span"> سیاست حفظ حریم خصوصی پورتلن</span> پردازش کند.</p>

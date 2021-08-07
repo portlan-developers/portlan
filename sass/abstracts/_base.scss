@@ -45,8 +45,6 @@ html {
     }
     scroll-behavior: smooth;
 }
-<<<<<<< HEAD
-=======
 .scroll
 {
 	overflow-y: scroll !important;
@@ -87,7 +85,7 @@ html {
 		background-size: cover;
 		background-position: top;
 	}
->>>>>>> dc271ae36f11476d19af1dc10a59414f10cbe51d
+}
 
 body {
     font-family: 'IRANSans';
@@ -143,8 +141,7 @@ body {
         align-items: center;
         background-attachment: fixed;
     }
-    // &__info{
-    // }
+  
     &__section--card {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
