@@ -1,0 +1,28 @@
+.btn{
+    &--login{
+        display: block;
+        color: $color-white;
+        background-color: $color-red-orginal;
+        width: 30%;
+        padding: 1rem;
+        font-family: inherit;
+        font-size: 1.9rem;
+        cursor: pointer;
+        outline: none;
+        border-radius: 8px;
+        border: 1px solid #eee;
+    }
+    &--register{
+        display: block;
+        color: $color-white;
+        background-color: $yellow-orange-color-wheel;
+        width: 30%;
+        padding: 1rem;
+        font-family: inherit;
+        font-size: 1.9rem;
+        cursor: pointer;
+        outline: none;
+        border-radius: 8px;
+        border: 1px solid #eee;
+    }
+}
