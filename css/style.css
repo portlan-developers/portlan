@@ -1846,19 +1846,6 @@ label {
   display: flex;
   flex-direction: column; }
 
-.container__scale {
-  display: flex;
-  flex-direction: column;
-  background-size: cover;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-top: 5rem;
-  padding-bottom: 10rem;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-image: url(../../img/services-scale-bg.webp); }
-
 .container__steps {
   background-position: 50% 50%;
   padding: 10rem 0;
@@ -1894,24 +1881,13 @@ label {
   flex-direction: column;
   text-align: center; }
 
-.container__marketing {
-  width: 100%;
-  height: 45rem;
-  background-image: url(../../img/services-marketing.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  box-sizing: border-box;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
 .services__h3 {
+  width: 91%;
+  text-align: center;
   color: #234;
   margin: 0;
   font-weight: 300;
-  font-size: 5.2rem;
+  font-size: 5rem;
   line-height: 7rem;
   margin-bottom: 3rem; }
   .services__h3--marketing {
@@ -1933,7 +1909,12 @@ label {
 
 .services__webapp--box {
   display: flex;
-  width: 60%; }
+  width: 88%;
+  align-items: flex-end;
+  justify-content: center; }
+  @media only screen and (max-width: 700px) {
+    .services__webapp--box {
+      flex-direction: column; } }
 
 .services__webapp--title {
   width: 100%;
@@ -1943,13 +1924,18 @@ label {
   margin-right: 0;
   vertical-align: bottom;
   margin-top: 8rem;
-  width: 43%;
-  height: 350px; }
+  width: 35%; }
+  @media only screen and (max-width: 700px) {
+    .services__webapp--img {
+      width: 100%; } }
 
 .services__webapp--ul {
   font-size: 1.3rem;
   text-align: right;
   font-weight: 100; }
+  @media only screen and (max-width: 700px) {
+    .services__webapp--ul {
+      width: 100%; } }
 
 .services__webapp--li {
   position: relative;
@@ -1970,54 +1956,15 @@ label {
     width: 1.5rem;
     height: 1.1rem; }
 
-.services__marketing--title {
-  font-weight: 300;
-  font-size: 3.9rem;
-  line-height: 3.9rem;
-  color: #fff; }
-
-.services__marketing--box {
-  margin-top: 5rem;
-  background-color: #fff;
-  width: 40%;
-  height: 49%;
-  display: flex; }
-
-.services__marketing--img {
-  display: block;
-  float: left;
-  width: 80%;
-  height: 99%;
-  padding: 1rem; }
-
-.services__marketing--text {
-  padding-right: 3rem;
-  width: 50%;
-  margin: 1rem;
-  line-height: 2.5rem;
-  margin-top: 3rem; }
-
-.services__btn {
-  color: #53c537;
-  border: 1px solid #53c537;
-  cursor: pointer;
-  line-height: 2.2rem;
-  padding: 0.5rem 3rem;
-  align-self: center;
-  font-weight: 100;
-  font-family: inherit;
-  text-decoration: none;
-  margin-bottom: 1rem;
-  font-size: larger; }
-  .services__btn:hover {
-    background-color: #53c537;
-    color: #fff; }
-
 .services__technologies--box {
   padding-top: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 1079px) {
+    .services__technologies--box {
+      display: grid;
+      grid-template-columns: repeat(2, auto); } }
 
 .services__technologies--brand {
   background: #f7f7f7;
@@ -2029,15 +1976,27 @@ label {
   margin: 3rem 1.5rem 3rem 1.5rem;
   display: flex;
   align-self: center;
-  justify-self: center; }
+  justify-self: center;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 1079px) {
+    .services__technologies--brand {
+      width: 30rem;
+      height: 30rem;
+      margin-right: 5rem; } }
 
 .services__technologies--img {
   display: inline-block;
   width: 11rem;
   height: 11rem; }
+  @media only screen and (max-width: 1079px) {
+    .services__technologies--img {
+      width: 20rem;
+      height: 20rem;
+      text-align: center; } }
 
 .services__security--box {
-  width: 100rem;
+  width: 75%;
   margin: 0 5px;
   display: flex;
   flex-direction: row;
@@ -2046,8 +2005,12 @@ label {
   align-self: center;
   justify-self: center;
   background-color: rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 1079px) {
+    .services__security--box {
+      flex-direction: column; } }
 
 .services__security--cardbox {
+  width: 100%;
   margin: 3px 3px;
   border: 3px solid;
   border-color: #777 #eee #eee #777;
@@ -2056,14 +2019,15 @@ label {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.5) 40%, rgba(0, 0, 0, 0.2) 100%); }
 
 .services__security--card {
-  width: 32rem;
+  width: 100%;
   border: 1px solid;
   border-color: #eee #777 #777 #eee;
   border-radius: 5px;
   padding: 3rem;
   padding-right: 4rem;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.5) 40%, rgba(0, 0, 0, 0.2) 100%, url(../../img/security-card-bg.jpg)); }
+  background: url(../../img/security-card-bg.jpg) #d6d6d6;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.5) 40%, rgba(0, 0, 0, 0.2) 100%), url(../../img/security-card-bg.jpg); }
 
 .services__security--h4 {
   font-size: 3rem;
@@ -2083,7 +2047,13 @@ label {
 .services__advantages--box {
   display: flex;
   margin-top: 8rem;
-  grid-gap: 4rem; }
+  width: 88%;
+  justify-content: space-evenly; }
+  @media only screen and (max-width: 1079px) {
+    .services__advantages--box {
+      flex-direction: column;
+      width: 100%;
+      align-items: center; } }
 
 .services__advantages--card {
   width: 35rem;
@@ -2093,6 +2063,12 @@ label {
   border: 2px solid #E3E3E3;
   border-top: 5px solid #53c537;
   background-color: #fff; }
+  @media only screen and (max-width: 1079px) {
+    .services__advantages--card {
+      width: 90%; } }
+  @media only screen and (max-width: 1079px) {
+    .services__advantages--card:not(:last-child) {
+      margin-bottom: 5rem; } }
 
 .services__advantages--h4 {
   font-size: 3.2rem;
@@ -2105,17 +2081,27 @@ label {
   margin-right: 0 1rem 1rem 1rem; }
 
 .services__steps--boxs {
-  width: min-content;
+  align-items: center;
+  justify-content: center;
   display: flex;
   margin-top: 5rem;
-  grid-gap: 17rem; }
+  width: 88%; }
+  @media only screen and (max-width: 1079px) {
+    .services__steps--boxs {
+      flex-direction: column;
+      width: 90%; } }
 
 .services__steps--box {
   display: flex;
   flex-direction: column;
-  width: 50rem;
+  width: 50%;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 1079px) {
+    .services__steps--box {
+      width: 100%;
+      align-items: center;
+      margin-bottom: 3rem; } }
 
 .services__steps--icon {
   height: 12rem;
@@ -2131,50 +2117,11 @@ label {
 .services__steps--p {
   text-align: center;
   font-size: 1.2rem;
-  font-weight: 100; }
-
-.services__scale--box {
-  width: 95%;
-  margin-top: 10rem;
-  color: #fff;
-  margin-right: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
-  grid-gap: 5rem; }
-
-.services__scale--card {
-  display: flex;
-  flex-direction: column;
-  margin-right: 10rem; }
-
-.services__scale--item {
-  margin-bottom: 30rem; }
-
-.services__scale--icard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(0%, -10%);
-  background: url(../../img/speedmetr-hand.png) 50% 50% no-repeat;
-  background-size: contain; }
-
-.services__scale--h4 {
-  font-weight: 300;
-  font-size: 3.2rem;
-  color: #53c537;
-  margin-bottom: 1rem;
-  text-align: right;
-  width: 80%; }
-  .services__scale--h4::before {
-    content: ".";
-    color: #53c537;
-    font-size: 8rem; }
-
-.services__scale--p {
-  text-align: right;
-  font-size: 1.2rem;
   font-weight: 100;
-  width: 82%; }
+  width: 90%; }
+  @media only screen and (max-width: 1079px) {
+    .services__steps--p {
+      width: 80%; } }
 
 .slider {
   width: 100%;
@@ -2295,11 +2242,14 @@ label {
   .contact__form--container {
     background-color: #fff;
     margin-top: 2rem;
-    width: 90rem;
+    width: 60%;
     box-shadow: 0 0 30px 2px #d9d9d9; }
     @media only screen and (max-width: 900px) {
       .contact__form--container {
-        width: 70%; } }
+        width: 90%; } }
+    @media only screen and (max-width: 700px) {
+      .contact__form--container {
+        width: 98%; } }
     @media only screen and (max-width: 400px) {
       .contact__form--container {
         width: 100%; } }
