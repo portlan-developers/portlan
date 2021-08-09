@@ -1,34 +1,28 @@
 @mixin keyframe_inout {
     @keyframes inout {
-        0%{
+        0% {
             transform: scale(1.05);
             filter: blur(1px);
         }
-        
-        100%{
+        100% {
             filter: blur(1.5px);
-    
             transform: scale(1);
-    
         }
     }
     animation-name: inout;
     animation-duration: 1s;
     animation-timing-function: ease;
-
 }
+
 @mixin keyframe_outIn {
     @keyframes outIn {
-        0%{
+        0% {
             opacity: 0.89;
             transform: scale(1);
-        
         }
-       
-        100%{
+        100% {
             transform: scale(1.01);
             opacity: 1;
-    
         }
     }
     animation-name: outIn;
@@ -38,17 +32,31 @@
 
 // responsive 
 @mixin phone-only {
-    @media only screen and (max-width: 768px) { @content; }
-  }
-  @mixin tablelt {
-    @media only screen and (max-width: 1079px) { @content; }
-  }
-  @mixin tablet-landscape {
-    @media only screen and (max-width: 900px) { @content; }
-  }
-  @mixin desktop {
-    @media only screen and (max-width: 1200px) { @content; }
-  }
-  @mixin big-desktop {
-    @media only screen and (max-width: 1800px) { @content; }
-  }
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablelt {
+    @media only screen and (max-width: 1079px) {
+        @content;
+    }
+}
+
+@mixin tablet-landscape {
+    @media only screen and (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin big-desktop {
+    @media only screen and (max-width: 1800px) {
+        @content;
+    }
+}
