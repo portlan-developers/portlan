@@ -17,6 +17,21 @@
 		flex-direction: column;
 	}
 
+	&__scale {
+		display: flex;
+		flex-direction: column;
+		background-size: cover;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding-top: 5rem;
+		padding-bottom: 10rem;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-image: url(../../img/services-scale-bg.webp);
+		background-size: cover;
+	}
+
 	&__steps{
 		background-position: 50% 50%;
 		padding: 10rem 0;
@@ -336,4 +351,89 @@
 		}
 	}
 
+	&__scale{
+		&--box{
+			width: 100%;
+			margin-top: 1rem;
+			color: #fff;
+			display: flex;
+			grid-gap: 5rem;
+			
+		}
+		&--card{
+			display: flex;
+			flex-direction: column;
+			margin-right: 4rem;
+		}
+		&--item{
+			margin-bottom: 5rem;
+		}
+		&--icard{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-size: contain;
+			position: relative;
+			width: 100%;
+			&::after{
+				display: block;
+				content: "";
+				z-index: 4111;
+				background: url(../../img/speedmetr-hand.png) 0 50% no-repeat;
+				background-size: contain;
+				animation-iteration-count: infinite;
+				animation-duration: 5s;
+				animation-direction: alternate;
+				transform: rotate(0deg);
+				width: 100%;
+				height: 100%;
+				-webkit-animation-name: rotate;
+				-webkit-animation-duration:2s;
+				-webkit-animation-iteration-count:infinite;
+				-webkit-animation-timing-function:linear;
+				-moz-animation-name: rotate;
+				-moz-animation-duration:2s;
+				-moz-animation-iteration-count:infinite;
+				-moz-animation-timing-function:linear;	
+			}
+		}
+		&--img{
+			position: absolute;
+			width: 100%;
+			display: block;
+
+		 }
+		&--h4{
+			font-weight: 300;
+			font-size: 3.5rem;
+			color: $color-green;
+			margin-bottom: 1rem;
+			text-align: right;
+			width: 88%;
+			&::before{
+				content: ".";
+				color: $color-green;
+				font-size: 8rem;
+
+			}
+		}
+		&--p{
+			text-align: right;
+			font-size: 1.5rem;
+			font-weight: 100;
+			width: 82%;
+		}
+	}
+
+}
+
+
+@-webkit-keyframes rotate {
+	from {-webkit-transform:rotate(0deg);}
+	to {  -webkit-transform:rotate(-30deg);}
+      }
+      
+@-moz-keyframes rotate {
+	from {-moz-transform:rotate(0deg);}
+	to {  -moz-transform:rotate(20deg);}
 }
