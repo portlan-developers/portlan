@@ -59,10 +59,12 @@
 
 .services {
 	&__h3 {
+		width: 91%;
+		text-align: center;
 		color: #234;
 		margin: 0;
 		font-weight: 300;
-		font-size: 5.2rem;
+		font-size: 5rem;
 		line-height: 7rem;
 		margin-bottom: 3rem;
 		&--marketing{
@@ -89,23 +91,37 @@
 	&__webapp{
 		&--box{
 			display: flex;
-			width: 60%;
+			width: 88%;
+			align-items: flex-end;
+			justify-content: center;
+			@media only screen and (max-width: 700px) {
+			flex-direction: column;
+
+		}
 		}
 		&--title{
 			width: 100%;
 			margin-left: 0;
+			
+			
 		}
 		&--img{
 			margin-right: 0;
 			vertical-align: bottom;
 			margin-top: 8rem;
-			width: 43%;
-			height: 350px;
+			width: 35%;
+			@media only screen and (max-width: 700px) {
+				width: 100%;
+			}
 		}
 		&--ul{
 			font-size: 1.3rem;
 			text-align: right;
 			font-weight: 100;
+			@media only screen and (max-width: 700px) {
+				width: 100%;
+			}
+		
 		}
 		&--li{
 			position: relative;
@@ -137,6 +153,10 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			@include tablelt{
+				display: grid;
+				grid-template-columns: repeat(2 , auto);
+			}	
 		}
 		&--brand{
 			background: #f7f7f7;
@@ -149,16 +169,32 @@
 			display: flex;
 			align-self: center;
 			justify-self: center;
+			align-items: center;
+			justify-content: center;
+			@include tablelt{
+				width: 30rem;
+				height: 30rem;
+				margin-right: 5rem;
+			}
+				
+
 		}
 		&--img{
 			display: inline-block;
 			width: 11rem;
 			height: 11rem;
+			@include tablelt{
+				width: 20rem;
+				height: 20rem;
+				text-align: center;
+
+			
+			}	
 		}
 	}
 	&__security{
 		&--box{
-			width: 100rem;
+			width: 75%;
 			margin: 0 5px;
 			display: flex;
 			flex-direction: row;
@@ -167,8 +203,12 @@
 			align-self: center;
 			justify-self: center;
 			background-color:rgba(0, 0, 0, 0.2);
+			@include tablelt{
+				flex-direction: column;
+			}	
 		}
 		&--cardbox{
+			width: 100%;
 			margin: 3px 3px;
 			border: 3px solid;
 			border-color: #777 #eee #eee #777;
@@ -176,19 +216,20 @@
 			text-align: right;
 			background: linear-gradient(135deg
 		    ,rgba(255,255,255,.1) 0,rgba(255,255,255,.5) 40%,rgba(0,0,0,.2) 100% );
-			
-			
 		}
 		&--card{
-			width: 32rem;
+			width: 100%;
 			border: 1px solid;
 			border-color: #eee #777 #777 #eee;
 			border-radius: 5px;
 			padding: 3rem;
 			padding-right: 4rem;
 			height: 100%;
-			background: linear-gradient(135deg
-		    ,rgba(255,255,255,.1) 0,rgba(255,255,255,.5) 40%,rgba(0,0,0,.2) 100% , url(../../img/security-card-bg.jpg));
+			background: url(../../img/security-card-bg.jpg)#d6d6d6;
+
+			
+			background-image: linear-gradient(135deg
+		    ,rgba(255,255,255,.1) 0,rgba(255,255,255,.5) 40%,rgba(0,0,0,.2) 100% ), url(../../img/security-card-bg.jpg);
 			
 
 		}
@@ -212,7 +253,13 @@
 		&--box{
 			display: flex;
 			margin-top: 8rem;
-			grid-gap: 4rem;
+			width: 88%;
+			justify-content: space-evenly;
+			@include tablelt{
+				flex-direction: column;
+				width: 100%;
+				align-items: center;
+			}
 		}
 		&--card{
 			width: 35rem;
@@ -222,6 +269,15 @@
 			border: 2px solid #E3E3E3;
 			border-top: 5px solid $color-green;
 			background-color: #fff;
+			@include tablelt{
+				width: 90%;
+			}
+			&:not(:last-child){
+				@include tablelt{
+					margin-bottom: 5rem;
+				}
+			}
+			
 		}
 		&--h4{
 			font-size: 3.2rem;
@@ -236,18 +292,27 @@
 	}
 	&__steps{
 		&--boxs{
-			width: min-content;
+			align-items: center;
+			justify-content: center;
 			display: flex;
 			margin-top: 5rem;
-			grid-gap: 17rem;
+			width: 88%;
+			@include tablelt{
+				flex-direction: column;
+				width: 90%;
+			}
 		}
 		&--box{
 			display: flex;
 			flex-direction: column;
-			width: 50rem;
+			width: 50%;
 			align-items: center;
 			justify-content: center;
-
+			@include tablelt{
+				width: 100%;
+				align-items: center;
+				margin-bottom: 3rem;
+			}
 		}
 		&--icon{
 			height: 12rem;
@@ -264,7 +329,11 @@
 			text-align: center;
 			font-size: 1.2rem;
 			font-weight: 100;
+			width: 90%;
+			@include tablelt{
+				width: 80%;
+			}
 		}
 	}
-}
 
+}
