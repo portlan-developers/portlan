@@ -37,23 +37,42 @@
     &__items a:hover .cards__name {
         color: white;
     }
-    &-items a:hover .cards__decsription {
+    &-items a:hover>.cards__decsription p {
         color: white;
     }
     &--1 {
         transition: all 1s;
         width: 613px;
         height: 450px;
+        @include phone-only {
+            width: 50%;
+        }
+        @include tablet-landscape {
+            width: 70%;
+        }
     }
     &--2 {
         transition: all 1s;
         width: 613px;
         height: 450px;
+        @include phone-only {
+            width: 50%;
+        }
+        @include tablet-landscape {
+            width: 70%;
+        }
     }
     &--3 {
         transition: all 1s;
         width: 613px;
         height: 450px;
+        @include phone-only {
+            width: 50%;
+        }
+        @include tablet-landscape {
+            width: 70%;
+            margin: 0 auto;
+        }
     }
     &--1:hover {
         background-image: linear-gradient(to right, rgba(146, 177, 199, 0.8), rgba(87, 188, 255, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/enterprise_software_development_cover.jpg?itok=Pw7sxuIw");
@@ -100,22 +119,38 @@
             margin: 10px;
         }
         &--1:hover {
-            background-image: linear-gradient(to right, rgba(26, 76, 112, 0.8), rgba(27, 42, 53, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/enterprise_software_development_cover.jpg?itok=Pw7sxuIw");
+            background-image: linear-gradient(to right, rgba(146, 177, 199, 0.8), rgba(87, 188, 255, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/enterprise_software_development_cover.jpg?itok=Pw7sxuIw");
             background-size: cover;
             background-position: top;
             font-size: 40px;
         }
         &--2:hover {
-            background-image: linear-gradient(to right, rgba(26, 76, 112, 0.8), rgba(27, 42, 53, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/custom_web_application_development_cover.jpg?itok=EtSFE6MH");
+            background-image: linear-gradient(to right, rgba(146, 177, 199, 0.8), rgba(87, 188, 255, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/custom_web_application_development_cover.jpg?itok=EtSFE6MH");
             background-size: cover;
             background-position: top;
             font-size: 40px;
         }
         &--3:hover {
-            background-image: linear-gradient(to right, rgba(26, 76, 112, 0.8), rgba(27, 42, 53, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/bg-mobile-app-development.jpg?itok=8cZ7Q-l3");
+            background-image: linear-gradient(to right, rgba(146, 177, 199, 0.8), rgba(87, 188, 255, 0.8)), url("https://www.iflexion.com/files/styles/service__front_page/public/content/service/background/bg-mobile-app-development.jpg?itok=8cZ7Q-l3");
             background-size: cover;
             background-position: top;
             font-size: 40px;
         }
     }
+}
+
+.cards--3:hover .cards__decsription {
+    color: whitesmoke;
+}
+
+.cards--2:hover .cards__decsription {
+    color: whitesmoke;
+}
+
+.cards--1:hover .cards__decsription {
+    color: whitesmoke;
+}
+
+.cards--1:hover .cards__logo {
+    color: white;
 }
