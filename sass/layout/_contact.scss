@@ -44,10 +44,13 @@
         &--container {
             background-color: #fff;
             margin-top: 2rem;
-            width: 90rem;
+            width: 60%;
             box-shadow: 0 0 30px 2px #d9d9d9;
             @media only screen and (max-width: 900px) {
-                width: 70%;
+                width: 90%;
+            }
+            @media only screen and (max-width: 700px) {
+                width: 98%;
             }
             @media only screen and (max-width: 400px) {
                 width: 100%;

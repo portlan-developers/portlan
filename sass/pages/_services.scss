@@ -17,20 +17,6 @@
 		flex-direction: column;
 	}
 
-	&__scale {
-		display: flex;
-		flex-direction: column;
-		background-size: cover;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		padding-top: 5rem;
-		padding-bottom: 10rem;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-image: url(../../img/services-scale-bg.webp);
-	}
-
 	&__steps{
 		background-position: 50% 50%;
 		padding: 10rem 0;
@@ -69,28 +55,16 @@
 		flex-direction: column;
 		text-align: center;
 	}
-
-	&__marketing{
-		width: 100%;
-		height: 45rem;
-		background-image: url(../../img/services-marketing.webp);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-		box-sizing: border-box;
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
 }
 
 .services {
 	&__h3 {
+		width: 91%;
+		text-align: center;
 		color: #234;
 		margin: 0;
 		font-weight: 300;
-		font-size: 5.2rem;
+		font-size: 5rem;
 		line-height: 7rem;
 		margin-bottom: 3rem;
 		&--marketing{
@@ -117,23 +91,37 @@
 	&__webapp{
 		&--box{
 			display: flex;
-			width: 60%;
+			width: 88%;
+			align-items: flex-end;
+			justify-content: center;
+			@media only screen and (max-width: 700px) {
+			flex-direction: column;
+
+		}
 		}
 		&--title{
 			width: 100%;
 			margin-left: 0;
+			
+			
 		}
 		&--img{
 			margin-right: 0;
 			vertical-align: bottom;
 			margin-top: 8rem;
-			width: 43%;
-			height: 350px;
+			width: 35%;
+			@media only screen and (max-width: 700px) {
+				width: 100%;
+			}
 		}
 		&--ul{
 			font-size: 1.3rem;
 			text-align: right;
 			font-weight: 100;
+			@media only screen and (max-width: 700px) {
+				width: 100%;
+			}
+		
 		}
 		&--li{
 			position: relative;
@@ -158,55 +146,6 @@
 		}
 	}
 
-	&__marketing{
-		&--title{
-			font-weight: 300;
-			font-size: 3.9rem;
-			line-height: 3.9rem;
-			color: #fff;
-		}
-		&--box{
-			margin-top: 5rem; 
-			background-color: #fff;
-			width: 40%;
-			height: 49%;
-			display: flex;
-		}
-		&--img{
-			display: block;
-			float: left;
-			width: 80%;
-			height: 99%;
-			padding: 1rem;
-
-
-		}
-		&--text{
-			padding-right: 3rem;
-			width: 50%;
-			margin: 1rem;
-			line-height: 2.5rem;
-			margin-top: 3rem;
-		}
-		
-	}
-	&__btn{
-		color: $color-green;
-		border: 1px solid $color-green;
-		cursor: pointer;
-		line-height: 2.2rem;
-		padding: 0.5rem 3rem;
-		align-self: center;
-		font-weight: 100;
-		font-family: inherit;
-		text-decoration: none;
-		margin-bottom: 1rem;
-		font-size: larger;
-		&:hover{
-			background-color: $color-green;
-			color: #fff;
-		}
-	}
 
 	&__technologies{
 		&--box{
@@ -214,6 +153,10 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			@include tablelt{
+				display: grid;
+				grid-template-columns: repeat(2 , auto);
+			}	
 		}
 		&--brand{
 			background: #f7f7f7;
@@ -226,16 +169,32 @@
 			display: flex;
 			align-self: center;
 			justify-self: center;
+			align-items: center;
+			justify-content: center;
+			@include tablelt{
+				width: 30rem;
+				height: 30rem;
+				margin-right: 5rem;
+			}
+				
+
 		}
 		&--img{
 			display: inline-block;
 			width: 11rem;
 			height: 11rem;
+			@include tablelt{
+				width: 20rem;
+				height: 20rem;
+				text-align: center;
+
+			
+			}	
 		}
 	}
 	&__security{
 		&--box{
-			width: 100rem;
+			width: 75%;
 			margin: 0 5px;
 			display: flex;
 			flex-direction: row;
@@ -244,8 +203,12 @@
 			align-self: center;
 			justify-self: center;
 			background-color:rgba(0, 0, 0, 0.2);
+			@include tablelt{
+				flex-direction: column;
+			}	
 		}
 		&--cardbox{
+			width: 100%;
 			margin: 3px 3px;
 			border: 3px solid;
 			border-color: #777 #eee #eee #777;
@@ -253,19 +216,20 @@
 			text-align: right;
 			background: linear-gradient(135deg
 		    ,rgba(255,255,255,.1) 0,rgba(255,255,255,.5) 40%,rgba(0,0,0,.2) 100% );
-			
-			
 		}
 		&--card{
-			width: 32rem;
+			width: 100%;
 			border: 1px solid;
 			border-color: #eee #777 #777 #eee;
 			border-radius: 5px;
 			padding: 3rem;
 			padding-right: 4rem;
 			height: 100%;
-			background: linear-gradient(135deg
-		    ,rgba(255,255,255,.1) 0,rgba(255,255,255,.5) 40%,rgba(0,0,0,.2) 100% , url(../../img/security-card-bg.jpg));
+			background: url(../../img/security-card-bg.jpg)#d6d6d6;
+
+			
+			background-image: linear-gradient(135deg
+		    ,rgba(255,255,255,.1) 0,rgba(255,255,255,.5) 40%,rgba(0,0,0,.2) 100% ), url(../../img/security-card-bg.jpg);
 			
 
 		}
@@ -289,7 +253,13 @@
 		&--box{
 			display: flex;
 			margin-top: 8rem;
-			grid-gap: 4rem;
+			width: 88%;
+			justify-content: space-evenly;
+			@include tablelt{
+				flex-direction: column;
+				width: 100%;
+				align-items: center;
+			}
 		}
 		&--card{
 			width: 35rem;
@@ -299,6 +269,15 @@
 			border: 2px solid #E3E3E3;
 			border-top: 5px solid $color-green;
 			background-color: #fff;
+			@include tablelt{
+				width: 90%;
+			}
+			&:not(:last-child){
+				@include tablelt{
+					margin-bottom: 5rem;
+				}
+			}
+			
 		}
 		&--h4{
 			font-size: 3.2rem;
@@ -313,18 +292,27 @@
 	}
 	&__steps{
 		&--boxs{
-			width: min-content;
+			align-items: center;
+			justify-content: center;
 			display: flex;
 			margin-top: 5rem;
-			grid-gap: 17rem;
+			width: 88%;
+			@include tablelt{
+				flex-direction: column;
+				width: 90%;
+			}
 		}
 		&--box{
 			display: flex;
 			flex-direction: column;
-			width: 50rem;
+			width: 50%;
 			align-items: center;
 			justify-content: center;
-
+			@include tablelt{
+				width: 100%;
+				align-items: center;
+				margin-bottom: 3rem;
+			}
 		}
 		&--icon{
 			height: 12rem;
@@ -341,55 +329,11 @@
 			text-align: center;
 			font-size: 1.2rem;
 			font-weight: 100;
-		}
-	}
-	&__scale{
-		&--box{
-			width: 95%;
-			margin-top: 10rem;
-			color: #fff;
-			margin-right: 2rem;
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(50rem , 1fr));
-			grid-gap: 5rem;
-			
-		}
-		&--card{
-			display: flex;
-			flex-direction: column;
-			margin-right: 10rem;
-		}
-		&--item{
-			margin-bottom: 30rem;
-		}
-		&--icard{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			transform: translate(0% , -10%);
-			background: url(../../img/speedmetr-hand.png) 50% 50% no-repeat;
-			background-size: contain;
-		}
-		&--h4{
-			font-weight: 300;
-			font-size: 3.2rem;
-			color: $color-green;
-			margin-bottom: 1rem;
-			text-align: right;
-			width: 80%;
-			&::before{
-				content: ".";
-				color: $color-green;
-				font-size: 8rem;
-
+			width: 90%;
+			@include tablelt{
+				width: 80%;
 			}
 		}
-		&--p{
-			text-align: right;
-			font-size: 1.2rem;
-			font-weight: 100;
-			width: 82%;
-		}
 	}
-}
 
+}
