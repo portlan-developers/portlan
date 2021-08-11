@@ -162,6 +162,12 @@ body {
   border-radius: 8px;
   border: 1px solid #eee; }
 
+textarea {
+  resize: none !important; }
+
+a, input, button, form, section, option, textarea {
+  font-family: inherit !important; }
+
 .header_container {
   background-image: url(../img/header.png);
   width: 100%;
@@ -716,7 +722,11 @@ nav {
     .about {
       width: 100%; } }
 
-<<<<<<< HEAD
+.blog {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh; }
+
 .contact__title--h {
   display: block;
   margin-block-start: 0.83em;
@@ -728,15 +738,6 @@ nav {
   font-weight: 300;
   margin: 0 0 20px;
   position: relative; }
-=======
-.blog {
-  background-color: #fff;
-  width: 100%;
-  height: 100vh; }
-
-.php-page__section-1__svg {
-  fill: #fb2c3a; }
->>>>>>> develop
 
 .contact__title--p {
   display: block;
