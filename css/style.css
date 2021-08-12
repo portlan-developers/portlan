@@ -483,6 +483,7 @@ nav {
 
 .full_header.header__nav--list {
   align-items: center; }
+<<<<<<< HEAD
 
 .full_header.header__nav--item-link {
   color: #222; }
@@ -501,6 +502,22 @@ nav {
 .info__bottom {
   display: flex;
   flex-direction: column; }
+=======
+
+.full_header.header__nav--item-link {
+  color: #222; }
+  .full_header.header__nav--item-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fb2c3a;
+    position: absolute;
+    top: 79%;
+    left: 0;
+    transition: all 0.2s ease-in-out; }
+  .full_header.header__nav--item-link:hover::after {
+    width: 100%; }
+>>>>>>> c71a89d0e22514585b1c80973c3213412fe0ea38
 
 .info__span {
   color: #53c537; }
@@ -514,10 +531,14 @@ nav {
 .info__description {
   font-size: 1.5rem;
   direction: ltr;
+<<<<<<< HEAD
   text-align: justify;
   justify-self: center;
   align-self: center;
   margin-bottom: 2rem; }
+=======
+  text-align: justify; }
+>>>>>>> c71a89d0e22514585b1c80973c3213412fe0ea38
 
 .btn__container {
   position: relative;
@@ -811,7 +832,7 @@ label {
   background-color: white;
   width: 100%;
   padding: 2.5rem 2rem 1.4rem 6rem;
-  border: 1px solid #e4e4e4;
+  border: 1px solid #d9d9d9;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
@@ -851,7 +872,7 @@ label {
 
 .form--submit {
   background-color: #53c537;
-  color: #e4e4e4;
+  color: #d9d9d9;
   border: 2px solid #53c537;
   cursor: pointer;
   line-height: 2.2rem;
@@ -2140,6 +2161,7 @@ label {
   @media only screen and (max-width: 1079px) {
     .services__steps--p {
       width: 80%; } }
+<<<<<<< HEAD
 
 /*.item1{grid-area:header;}
 .item2{grid-area: top;}
@@ -2333,6 +2355,8 @@ label {
     font-family: iransans;
     white-space: nowrap;
     background-color: transparent; }
+=======
+>>>>>>> c71a89d0e22514585b1c80973c3213412fe0ea38
 
 .slider {
   width: 100%;
@@ -2488,7 +2512,7 @@ label {
   background-color: white;
   width: 100%;
   padding: 2.5rem 2rem 1.4rem 6rem;
-  border: 1px solid #e4e4e4;
+  border: 1px solid #d9d9d9;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
@@ -2526,7 +2550,7 @@ label {
 
 .form--submit {
   background-color: #53c537;
-  color: #e4e4e4;
+  color: #d9d9d9;
   border: 2px solid #53c537;
   cursor: pointer;
   line-height: 2.2rem;
