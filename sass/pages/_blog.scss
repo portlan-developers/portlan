@@ -23,7 +23,7 @@
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: 22vh 1fr;
-     background-image:linear-gradient(rgba($cadet-blue, .33), rgba($queen-blue, .73)), url(../../img/bkgnd-blog.jpg);
+     background-image:linear-gradient(rgba($cadet-blue, .33), rgba($queen-blue, .73)), url(../img/bkgnd-blog.jpg);
      background-position: center;
      background-size: cover;
      &--logo{
