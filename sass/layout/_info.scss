@@ -1,3 +1,7 @@
+.info__bottom{
+    display: flex;
+    flex-direction: column;
+}
 .info__span{
     color:$color-green;
 }
@@ -11,6 +15,9 @@
    font-size: 1.5rem;
     direction: ltr;
     text-align: justify;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 2rem;
 }
 .btn__container{
     position: relative;
