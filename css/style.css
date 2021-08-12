@@ -2597,39 +2597,39 @@ label {
 
    min-width: 500px !important;
    */
-}
-.blog__header {
-  min-height: 99.9vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 22vh 1fr;
-  background-image: linear-gradient(rgba(77, 144, 142, 0.33), rgba(87, 117, 144, 0.73)), url(../../img/bkgnd-blog.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.blog__header--logo {
-  width: 10rem;
-  padding: 1rem 2rem;
-  grid-row: 1/2;
-  grid-column: 3/4;
-  justify-self: left;
-}
-.blog__header--title {
-  grid-area: 2/2/3/3;
-  justify-self: center;
-  align-self: center;
-  color: #e4e4e4;
-  font-size: 10rem;
-  font-weight: bold;
-  transform: translateY(5rem);
-  text-shadow: 3px 5px 10px #223344;
-}
-.blog__header--nav {
-  grid-area: 1/1/2/2;
-  padding: 1.5rem 2rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  /*&__header{
+   min-height: 99.9vh;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 22vh 1fr;
+   background-image:linear-gradient(rgba($cadet-blue, .33), rgba($queen-blue, .73)), url(../../img/bkgnd-blog.jpg);
+   background-position: center;
+   background-size: cover;
+   &--logo{
+       width: 10rem;
+       padding: 1rem 2rem;
+       grid-row: 1/2;
+       grid-column: 3/4;
+       justify-self: left;
+   }
+   &--title{
+       grid-area: 2/2/3/3;
+       justify-self: center;
+       align-self: center;
+       color:$color-grey-text;
+       font-size: 10rem;
+       font-weight: bold;
+       transform: translateY(5rem);
+       text-shadow: 3px 5px 10px $color-heading;
+    }
+    &--nav{
+        grid-area: 1/1/2/2;
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+  }*/
 }
 .blog__top {
   display: grid;
@@ -2643,9 +2643,6 @@ label {
   padding: 2rem 3rem;
   font-size: 5rem;
   color: #223344;
-}
-.blog__top--topic::before {
-  content: "🖕";
 }
 .blog__top--topic::after {
   content: "";
@@ -2709,7 +2706,7 @@ label {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 5px;
-  background-image: linear-gradient(rgba(77, 144, 142, 0.05), rgba(39, 125, 161, 0.1)), url(../../img/post_wallpaper2.jpg);
+  background-image: linear-gradient(rgba(77, 144, 142, 0.07), rgba(39, 125, 161, 0.1)), url(../../img/post_wallpaper2.jpg);
 }
 
 .post {

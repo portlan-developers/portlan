@@ -18,7 +18,7 @@
      min-width: 500px !important;
      */
 
-     &__header{
+     /*&__header{
      min-height: 99.9vh;
      display: grid;
      grid-template-columns: repeat(3, 1fr);
@@ -50,7 +50,7 @@
           justify-content: space-around;
           align-items: flex-start;
       }
-    }
+    }*/
     
     &__top{
     display: grid;
@@ -65,9 +65,9 @@
       font-size: 5rem ;
       color: $color-heading;
       }
-      &--topic::before{
-          content:"\1F595";
-      }
+    //   &--topic::before{
+    //       content:"\1F595";
+    //   }
       &--topic::after{
         content: "";
         height: 2px;
@@ -102,7 +102,7 @@
             background-repeat: no-repeat;
             border-radius: 5px;
             
-            background-image: linear-gradient(rgba($cadet-blue, .05), rgba($cg-blue, .10)), url(../../img/post_wallpaper2.jpg);
+            background-image: linear-gradient(rgba($cadet-blue, .07), rgba($cg-blue, .10)), url(../../img/post_wallpaper2.jpg);
         }
     
         
