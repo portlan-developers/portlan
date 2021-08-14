@@ -137,9 +137,10 @@ body {
     background-color: #3d3c42; }
 
 .btn--login {
-  display: block;
+  background: -webkit-linear-gradient(to right, #e52d27, #b31217);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e52d27, #b31217);
   color: #fff;
-  background-color: #fb2c3a;
   width: 30%;
   padding: 1rem;
   font-family: inherit;
@@ -167,6 +168,9 @@ textarea {
 
 a, input, button, form, section, option, textarea {
   font-family: inherit !important; }
+
+input {
+  border-radius: 8px; }
 
 .header_container {
   background-image: url(../img/header.png);
@@ -2341,7 +2345,22 @@ label {
 
 .field-login {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100%; }
+
+.login__form--container {
+  width: 60rem; }
+
+.login__form--title {
+  text-align: center;
+  font-size: 2.9rem;
+  color: #222;
+  padding: 1rem;
+  font-weight: 500; }
+
+.login__form--input {
+  width: 100%;
+  border-radius: 8px; }
 
 .container__experties {
   background-position: 50% 50%;
