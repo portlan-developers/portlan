@@ -1,8 +1,9 @@
 .btn{
     &--login{
-        display: block;
-        color: $color-white;
-        background-color: $color-red-orginal;
+        background: -webkit-linear-gradient(to right, #e52d27, #b31217); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #e52d27, #b31217);
+        color: #fff;
+        
         width: 30%;
         padding: 1rem;
         font-family: inherit;

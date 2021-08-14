@@ -1,4 +1,21 @@
 .field-login{
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+.login__form{
+    &--container{
+       width: 60rem;
+    }
+    &--title{
+        text-align: center; 
+        font-size: 2.9rem; 
+        color: #222;
+        padding: 1rem; 
+        font-weight: 500;
+    }
+    &--input{
+        width: 100%;
+        border-radius: 8px;
+    }
 }
