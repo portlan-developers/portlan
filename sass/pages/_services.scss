@@ -17,6 +17,21 @@
 		flex-direction: column;
 	}
 
+	&__scale {
+		display: flex;
+		flex-direction: column;
+		background-size: cover;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding-top: 5rem;
+		padding-bottom: 10rem;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-image: url(../../img/services-scale-bg.webp);
+		background-size: cover;
+	}
+
 	&__steps{
 		background-position: 50% 50%;
 		padding: 10rem 0;
@@ -156,7 +171,12 @@
 			@include tablelt{
 				display: grid;
 				grid-template-columns: repeat(2 , auto);
-			}	
+			}
+			@include phone-only{
+				display: flex;
+				flex-direction: column;
+			}
+
 		}
 		&--brand{
 			background: #f7f7f7;
@@ -176,6 +196,10 @@
 				height: 30rem;
 				margin-right: 5rem;
 			}
+			@include phone-only{
+				width: 50rem;
+				height: 50rem;
+			}
 				
 
 		}
@@ -187,8 +211,11 @@
 				width: 20rem;
 				height: 20rem;
 				text-align: center;
-
-			
+			}
+			@include phone-only{
+				width: 30rem;
+				height: 30rem;
+				text-align: center;
 			}	
 		}
 	}
@@ -336,4 +363,143 @@
 		}
 	}
 
+	&__scale{
+		&--box{
+			width: 100%;
+			margin-top: 1rem;
+			color: #fff;
+			display: flex;
+			grid-gap: 3rem;
+			align-items: center;
+			@include tablelt{
+				display: grid;
+				justify-items: center;
+			}
+			@include phone-only{
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		&--card{
+			display: flex;
+			flex-direction: column;
+			margin-right: 4rem;
+			width: 29%;
+			@include tablelt{
+				order: 1;
+				width: 98%;
+			}
+		}
+		&--item{
+			margin-bottom: 5rem;
+		}
+		&--icard{
+			width: 35%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-size: contain;
+			position: relative;
+			&::after{
+				position: absolute;
+				display: block;
+				content: "";
+				z-index: 4;
+				background: url(../../img/speedmetr-hand.png) 0 50% no-repeat;
+				background-size: contain;
+				animation-iteration-count: infinite;
+				animation-duration: 5s;
+				animation-direction: alternate;
+				transform: rotate(0deg);
+				width: 100%;
+				height: 100%;
+				-webkit-animation-name: rotate;
+				-webkit-animation-duration:2s;
+				-webkit-animation-iteration-count:infinite;
+				-webkit-animation-timing-function:linear;
+				-moz-animation-name: rotate;
+				-moz-animation-duration:2s;
+				-moz-animation-iteration-count:infinite;
+				-moz-animation-timing-function:linear;	
+			}
+			@include tablelt{
+				order: 0;
+				width: 80%;
+				align-items: center;
+				justify-content: center;
+				grid-column: 1 / span 2;
+				grid-row: 1;
+			}
+			@include phone-only{
+				width: 80%;
+			}
+			
+		}
+		&--img{
+			width: 100%;
+			display: block;
+			justify-self: center;
+		}
+		&--h4{
+			font-weight: 300;
+			font-size: 3.3rem;
+			color: $color-green;
+			margin-bottom: 1rem;
+			text-align: right;
+			width: 86%;
+			&::before{
+				content: ".";
+				color: $color-green;
+				font-size: 8rem;
+			}
+			&-right{
+				text-align: left;
+				&::after{
+					content: ".";
+					color: $color-green;
+					font-size: 8rem;
+				}
+				&::before{
+					content: "";
+				}
+				@include tablelt{
+					text-align: right;
+					&::after{
+						content: "";
+					}
+					&::before{
+						content: ".";
+						color: $color-green;
+						font-size: 8rem;
+					}
+				}
+			}
+		}
+		&--p{
+			color: #fff;
+			text-align: right;
+			font-size: 1.5rem;
+			font-weight: 100;
+			width: 88%;
+			&-right{
+				text-align: left;
+				@include tablelt{
+					text-align: right;
+				}
+			}
+		}
+	}
+
 }
+
+
+@-webkit-keyframes rotate {
+	from {-webkit-transform:rotate(0deg);}
+	to {  -webkit-transform:rotate(-30deg);}
+      }
+      
+@-moz-keyframes rotate {
+	from {-moz-transform:rotate(0deg);}
+	to {  -moz-transform:rotate(20deg);}
+}
+
