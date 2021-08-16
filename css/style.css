@@ -2903,7 +2903,7 @@ label {
     color: #fff;
     text-decoration: none;
     font-weight: 400;
-    transition: all  500ms; }
+    transition: all 500ms; }
     .page--blog__article--title:hover {
       color: #f94144ff;
       font-weight: 700; }
