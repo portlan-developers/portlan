@@ -2809,6 +2809,65 @@ label {
   to {
     -moz-transform: rotate(20deg); } }
 
+.detail_blog-page--header {
+  height: 73vh; }
+  .detail_blog-page--header--boxs {
+    width: 100%;
+    display: grid;
+    place-items: center; }
+  .detail_blog-page--header--container {
+    width: 80%;
+    color: #fff;
+    margin-top: 8rem; }
+  .detail_blog-page--header--line {
+    width: 30%;
+    background-color: #fff;
+    height: 3px; }
+  .detail_blog-page--header--heading {
+    font-size: 3rem; }
+  .detail_blog-page--header--des {
+    font-size: 2rem; }
+  .detail_blog-page--header--box_item-2 {
+    display: flex;
+    flex-direction: column; }
+    .detail_blog-page--header--box_item-2-item {
+      font-size: 1.6rem; }
+
+.detail_blog-page--container {
+  margin-top: 10rem;
+  display: grid;
+  place-items: center; }
+
+.detail_blog-page--text {
+  text-align: justify;
+  width: 90%;
+  font-size: 2.4rem; }
+
+.detail_blog-page--shere {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  @media only screen and (max-width: 1079px) {
+    .detail_blog-page--shere {
+      width: 40%; } }
+  .detail_blog-page--shere_title {
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: #223344; }
+
+.whatsapp {
+  color: #53c537;
+  font-size: 3.8rem; }
+  .whatsapp:hover {
+    transform: translateY(-10px); }
+
+.instagram {
+  color: #fb2c3a;
+  font-size: 3.8rem; }
+  .instagram:hover {
+    transform: translateY(-10px); }
+
 .page--blog__container {
   place-items: center;
   display: grid;
