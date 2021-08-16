@@ -1,0 +1,71 @@
+.page--blog{
+    &__container{
+        place-items: center;
+        display: grid;
+        width: 100%;
+    }
+    &__main{
+        place-items: center;
+        display: grid;
+        grid-gap: 1rem;
+        width: 90%;
+        grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+    }
+    &__article{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: $color-green;
+        box-shadow: 0 0 1px 1px #eee;
+        &:nth-child(1),&:nth-child(6){
+            
+            width: 100%;
+            @include desktop{
+                grid-column: unset;
+            }
+            @include big-desktop{
+                grid-column: 1/-1 ;
+
+            }
+        }
+        &--box{
+            
+            padding: 1rem;
+            width: 80%;
+        }
+        &--title{
+            color: $color-white;
+            text-decoration: none;
+            font-weight: 400;
+            transition: all  500ms;
+            &:hover{
+                color: $red-salsa;
+                font-weight: 700;
+
+            }
+        }
+        &--des{
+            font-weight: 200;
+
+            color: $color-white;
+            width: 80%;
+            @include desktop{
+                width: 95%;
+
+            }
+
+        }
+        &--person{
+            display: flex;
+            flex-direction: column;
+            &_item{
+                color: $color-white;
+            }
+        }
+       
+    }
+    
+    
+}

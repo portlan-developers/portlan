@@ -1,26 +1,38 @@
-@import "abstracts/mixin",
+@import 
+
+// abstracts
+"abstracts/mixin",
 "abstracts/base",
 "abstracts/colors",
+
+// components
 "components/alert",
 "components/btn",
 "components/input",
 "components/slider",
+
+// layout
 "layout/nav",
 "layout/header",
 "layout/info",
 "layout/footer",
 "layout/integrated-cards",
+"layout/quote",
+"layout/contact",
+"layout/cards",
+"layout/card",
+"layout/slider",
+
+
+
+// pages
 "pages/home",
-
 "pages/contact",
-
 "pages/php-development",
 "pages/about",
 "pages/login",
 "pages/services",
-"layout/slider",
-"layout/quote",
-"layout/contact",
-"layout/cards",
-"layout/card";
+"pages/blog";
+
+
 
