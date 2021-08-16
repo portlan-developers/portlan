@@ -2105,68 +2105,10 @@ label {
     color: #fff;
     font-size: 2rem; }
 
-
-.container__webapp {
-  background-position: 50% 50%;
-  padding: 1rem 0;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column; }
-
-.container__scale {
-  display: flex;
-  flex-direction: column;
-  background-size: cover;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-top: 5rem;
-  padding-bottom: 10rem;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-image: url(../../img/services-scale-bg.webp);
-  background-size: cover; }
-
-.container__steps {
-  background-position: 50% 50%;
-  padding: 10rem 0;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column; }
-
-.container__advantages {
-  background-position: 50% 50%;
-  padding: 10rem 0;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  background-image: url(../../img/services-advantages-bg.webp);
-  background-size: cover; }
-
-.container__security {
-  background-position: 50% 50%;
-  padding: 6rem 0;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column; }
-
-.container__technologies {
-  background-position: 50% 50%;
-  padding: 10rem 0;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-=======
 .about__heading-center {
   margin: 0 auto;
   font-size: 3rem;
   width: 65%;
-
   text-align: center; }
   @media only screen and (max-width: 768px) {
     .about__heading-center {
@@ -2259,16 +2201,7 @@ label {
   align-items: center;
   justify-content: space-around; }
   @media only screen and (max-width: 1079px) {
-
-    .services__technologies--box {
-      display: grid;
-      grid-template-columns: repeat(2, auto); } }
-  @media only screen and (max-width: 768px) {
-    .services__technologies--box {
-      display: flex;
-
     .about__us__part-2__box {
-
       flex-direction: column; } }
 
 .about__us__part-2--heading {
@@ -2283,31 +2216,6 @@ label {
   justify-content: space-around;
   position: relative; }
   @media only screen and (max-width: 1079px) {
-
-    .services__technologies--brand {
-      width: 30rem;
-      height: 30rem;
-      margin-right: 5rem; } }
-  @media only screen and (max-width: 768px) {
-    .services__technologies--brand {
-      width: 50rem;
-      height: 50rem; } }
-
-.services__technologies--img {
-  display: inline-block;
-  width: 11rem;
-  height: 11rem; }
-  @media only screen and (max-width: 1079px) {
-    .services__technologies--img {
-      width: 20rem;
-      height: 20rem;
-      text-align: center; } }
-  @media only screen and (max-width: 768px) {
-    .services__technologies--img {
-      width: 30rem;
-      height: 30rem;
-      text-align: center; } }
-
     .about__us__part-2--article {
       margin-bottom: 4rem; } }
   .about__us__part-2--article_heading {
@@ -2331,7 +2239,6 @@ label {
     left: 100%;
     transform: rotate(90deg);
     transition: all 0.2s ease-in-out; }
-
 
 .about__us__part-3 {
   background-image: url("../img/technology.jpg");
@@ -2471,6 +2378,20 @@ label {
   display: flex;
   flex-direction: column; }
 
+.container__scale {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url(../../img/services-scale-bg.webp);
+  background-size: cover; }
+
 .container__steps {
   background-position: 50% 50%;
   padding: 10rem 0;
@@ -2489,141 +2410,11 @@ label {
   background-image: url(../../img/services-advantages-bg.webp);
   background-size: cover; }
 
-.services__scale--box {
-  width: 100%;
-  margin-top: 1rem;
-  color: #fff;
-  display: flex;
-  grid-gap: 3rem;
-  align-items: center; }
-  @media only screen and (max-width: 1079px) {
-    .services__scale--box {
-      display: grid;
-      justify-items: center; } }
-  @media only screen and (max-width: 768px) {
-    .services__scale--box {
-      display: flex;
-      flex-direction: column; } }
-
-.services__scale--card {
-  display: flex;
-  flex-direction: column;
-  margin-right: 4rem;
-  width: 29%; }
-  @media only screen and (max-width: 1079px) {
-    .services__scale--card {
-      order: 1;
-      width: 98%; } }
-
-.services__scale--item {
-  margin-bottom: 5rem; }
-
-.services__scale--icard {
-  width: 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: contain;
-  position: relative; }
-  .services__scale--icard::after {
-    position: absolute;
-    display: block;
-    content: "";
-    z-index: 4;
-    background: url(../../img/speedmetr-hand.png) 0 50% no-repeat;
-    background-size: contain;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-direction: alternate;
-    transform: rotate(0deg);
-    width: 100%;
-    height: 100%;
-    -webkit-animation-name: rotate;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: rotate;
-    -moz-animation-duration: 2s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear; }
-  @media only screen and (max-width: 1079px) {
-    .services__scale--icard {
-      order: 0;
-      width: 80%;
-      align-items: center;
-      justify-content: center;
-      grid-column: 1 / span 2;
-      grid-row: 1; } }
-  @media only screen and (max-width: 768px) {
-    .services__scale--icard {
-      width: 80%; } }
-
-.services__scale--img {
-  width: 100%;
-  display: block;
-  justify-self: center; }
-
-.services__scale--h4 {
-  font-weight: 300;
-  font-size: 3.3rem;
-  color: #53c537;
-  margin-bottom: 1rem;
-  text-align: right;
-  width: 86%; }
-  .services__scale--h4::before {
-    content: ".";
-    color: #53c537;
-    font-size: 8rem; }
-  .services__scale--h4-right {
-    text-align: left; }
-    .services__scale--h4-right::after {
-      content: ".";
-      color: #53c537;
-      font-size: 8rem; }
-    .services__scale--h4-right::before {
-      content: ""; }
-    @media only screen and (max-width: 1079px) {
-      .services__scale--h4-right {
-        text-align: right; }
-        .services__scale--h4-right::after {
-          content: ""; }
-        .services__scale--h4-right::before {
-          content: ".";
-          color: #53c537;
-          font-size: 8rem; } }
-
-.services__scale--p {
-  color: #fff;
-  text-align: right;
-  font-size: 1.5rem;
-  font-weight: 100;
-  width: 88%; }
-  .services__scale--p-right {
-    text-align: left; }
-    @media only screen and (max-width: 1079px) {
-      .services__scale--p-right {
-        text-align: right; } }
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(-30deg); } }
-
-@-moz-keyframes rotate {
-  from {
-    -moz-transform: rotate(0deg); }
-  to {
-    -moz-transform: rotate(20deg); } }
-
-.slider {
-  width: 100%;
 .container__security {
   background-position: 50% 50%;
   padding: 6rem 0;
   align-items: center;
   justify-content: center;
-
   display: flex;
   flex-direction: column; }
 
@@ -2720,6 +2511,10 @@ label {
     .services__technologies--box {
       display: grid;
       grid-template-columns: repeat(2, auto); } }
+  @media only screen and (max-width: 768px) {
+    .services__technologies--box {
+      display: flex;
+      flex-direction: column; } }
 
 .services__technologies--brand {
   background: #f7f7f7;
@@ -2739,6 +2534,10 @@ label {
       width: 30rem;
       height: 30rem;
       margin-right: 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .services__technologies--brand {
+      width: 50rem;
+      height: 50rem; } }
 
 .services__technologies--img {
   display: inline-block;
@@ -2748,6 +2547,11 @@ label {
     .services__technologies--img {
       width: 20rem;
       height: 20rem;
+      text-align: center; } }
+  @media only screen and (max-width: 768px) {
+    .services__technologies--img {
+      width: 30rem;
+      height: 30rem;
       text-align: center; } }
 
 .services__security--box {
@@ -2877,6 +2681,133 @@ label {
   @media only screen and (max-width: 1079px) {
     .services__steps--p {
       width: 80%; } }
+
+.services__scale--box {
+  width: 100%;
+  margin-top: 1rem;
+  color: #fff;
+  display: flex;
+  grid-gap: 3rem;
+  align-items: center; }
+  @media only screen and (max-width: 1079px) {
+    .services__scale--box {
+      display: grid;
+      justify-items: center; } }
+  @media only screen and (max-width: 768px) {
+    .services__scale--box {
+      display: flex;
+      flex-direction: column; } }
+
+.services__scale--card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+  width: 29%; }
+  @media only screen and (max-width: 1079px) {
+    .services__scale--card {
+      order: 1;
+      width: 98%; } }
+
+.services__scale--item {
+  margin-bottom: 5rem; }
+
+.services__scale--icard {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  position: relative; }
+  .services__scale--icard::after {
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: 4;
+    background: url(../../img/speedmetr-hand.png) 0 50% no-repeat;
+    background-size: contain;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    transform: rotate(0deg);
+    width: 100%;
+    height: 100%;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear; }
+  @media only screen and (max-width: 1079px) {
+    .services__scale--icard {
+      order: 0;
+      width: 80%;
+      align-items: center;
+      justify-content: center;
+      grid-column: 1 / span 2;
+      grid-row: 1; } }
+  @media only screen and (max-width: 768px) {
+    .services__scale--icard {
+      width: 80%; } }
+
+.services__scale--img {
+  width: 100%;
+  display: block;
+  justify-self: center; }
+
+.services__scale--h4 {
+  font-weight: 300;
+  font-size: 3.3rem;
+  color: #53c537;
+  margin-bottom: 1rem;
+  text-align: right;
+  width: 86%; }
+  .services__scale--h4::before {
+    content: ".";
+    color: #53c537;
+    font-size: 8rem; }
+  .services__scale--h4-right {
+    text-align: left; }
+    .services__scale--h4-right::after {
+      content: ".";
+      color: #53c537;
+      font-size: 8rem; }
+    .services__scale--h4-right::before {
+      content: ""; }
+    @media only screen and (max-width: 1079px) {
+      .services__scale--h4-right {
+        text-align: right; }
+        .services__scale--h4-right::after {
+          content: ""; }
+        .services__scale--h4-right::before {
+          content: ".";
+          color: #53c537;
+          font-size: 8rem; } }
+
+.services__scale--p {
+  color: #fff;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 100;
+  width: 88%; }
+  .services__scale--p-right {
+    text-align: left; }
+    @media only screen and (max-width: 1079px) {
+      .services__scale--p-right {
+        text-align: right; } }
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-30deg); } }
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(20deg); } }
 
 .page--blog__container {
   place-items: center;
