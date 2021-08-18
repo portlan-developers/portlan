@@ -2919,3 +2919,41 @@ label {
     flex-direction: column; }
     .page--blog__article--person_item {
       color: #fff; }
+
+.verified-page__container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  min-height: 100vh; }
+
+.verified-page__box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 1px 1px #eee;
+  padding: 2rem;
+  border-radius: 8px; }
+
+.verified-page_img {
+  width: 30%; }
+
+.verified-page_paragraph--1, .verified-page_paragraph--2 {
+  font-size: 2rem;
+  text-align: justify; }
+
+.verified-page_link {
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4d908eff;
+  padding: 1rem;
+  width: 20rem;
+  text-align: center;
+  font-size: 1.6rem;
+  cursor: pointer; }
+  .verified-page_link-refresh {
+    transition: transform ease 3s; }
+  .verified-page_link:hover > .verified-page_link-refresh {
+    transform: rotate(180deg); }
