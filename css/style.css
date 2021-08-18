@@ -74,25 +74,24 @@ html {
   .container__admin {
     background-color: #F5F7FF; }
     .container__admin--snackbar {
+      padding: 2rem;
       width: 100%;
-      height: 8rem;
+      height: 6rem;
       display: flex;
       background-color: #fff;
       align-items: center;
       justify-content: space-between;
-      padding: 2rem;
-      box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.34);
-      z-index: 200;
+      box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.15);
       position: fixed;
       top: 0;
       right: 0;
       left: 0;
       z-index: 1000; }
     .container__admin--navbar {
+      min-height: calc(100vh - 6rem);
       width: 23rem;
-      padding: 2rem;
       padding-top: 3rem;
-      margin-top: 8rem;
+      margin-top: 6rem;
       height: 100vh;
       background-color: #fff;
       display: flex;
@@ -2984,18 +2983,34 @@ label {
     transform: translate(-1.5rem); }
 
 .admin__snackbar--1 {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.admin__snackbar--item1 {
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.admin__snackbar--item2 {
+  margin: 1rem; }
 
 .admin__snackbar--2 {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: baseline; }
 
 .admin__snackbar--profile-img {
-  width: 2rem;
-  height: 2rem; }
+  width: 2.5rem;
+  height: 2.5rem; }
 
 .admin__snackbar--logo {
-  width: 2rem;
-  height: 2rem; }
+  width: 4rem;
+  height: 4rem;
+  text-decoration: none;
+  display: flex;
+  margin-left: 1rem; }
 
 .admin__snackbar--notifbar-btn {
   border: none;
@@ -3003,7 +3018,20 @@ label {
 
 .admin__snackbar--navbar-btn {
   border: none;
-  background-color: unset; }
+  background-color: unset;
+  margin-right: 13rem;
+  cursor: pointer; }
+
+.admin__snackbar--a {
+  color: #6c7383;
+  font-size: 2.5rem; }
+
+.admin__snackbar--menu {
+  text-align: center;
+  align-self: flex-start;
+  justify-content: flex-start;
+  color: #6c7383;
+  cursor: pointer; }
 
 .admin__navbar--items {
   list-style: none; }

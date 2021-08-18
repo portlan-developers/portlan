@@ -2,6 +2,7 @@
 <html lang="fa_IR" dir="rtl">
   <head>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,13 +29,14 @@
     <!---------- snackbar ---------->
     <section class="container__admin--snackbar">
       <nav class="admin__snackbar--1">
-        <div class="admin__snackbar--logo">
-          <a href="#" class="admin__snackbar--logo-portlan">
+        <div class="admin__snackbar--item1">
+          <a href="#" class="admin__snackbar--logo">
             <img src="../img/logo.png" alt="portlan logo" class="admin__snackbar--logo"/>
+            <span class="admin__snackbar--a">portlan</span>
           </a>
         </div>
 
-        <div class="admin__snackbar--navbar">
+        <div class="admin__snackbar--item1">
           <button
             class="admin__snackbar--navbar-btn"
             type="button"
@@ -45,39 +47,40 @@
             </svg>
           </button>
         </div>
-
-        <form action="#" class="admin__search">
-          <button class="admin__search--btn" type="button">
-            <svg class="admin__search--svg">
-              <use xlink:href="../img/symbol-defs4.svg#icon-search"></use>
-            </svg>
-          </button>
-          <input type="text" class="admin__search--input" placeholder="جست و جو کنید...">
-        </form>
+        <div class="admin__snackbar--item1">
+          <form action="#" class="admin__search">
+            <button class="admin__search--btn" type="button">
+              <svg class="admin__search--svg">
+                <use xlink:href="../img/symbol-defs4.svg#icon-search"></use>
+              </svg>
+            </button>
+            <input type="text" class="admin__search--input" placeholder="جست و جو کنید...">
+          </form>
+        </div>
 
       </nav>
       <nav class="admin__snackbar--2">
-        <div class="admin__snackbar--notif">
+        <div class="admin__snackbar--item2">
           <svg class="admin__svg">
             <use xlink:href="../img/symbol-defs4.svg#icon-bell"></use>
           </svg>
         </div>
 
-        <div class="admin__snackbar--profile">
+        <div class="admin__snackbar--item2">
           <img
-            src="../img/logo.png"
+            src="../img/admin__user.png"
             alt="portlan logo"
             class="admin__snackbar--profile-img"
           />
         </div>
 
-        <div class="admin__snackbar--notifbar">
+        <div class="admin__snackbar--item2">
           <button
             class="admin__snackbar--notifbar-btn"
             type="button"
             data-toggle="dropdown"
           >
-            <span class="admin__menu">&hellip;</span>
+          <i class="fa fa-ellipsis-h fa-2x admin__snackbar--menu"></i>
           </button>
         </div>
       </nav>

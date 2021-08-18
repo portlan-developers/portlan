@@ -46,19 +46,35 @@
   &__snackbar{
     &--1{
       display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--item1{
+      margin: 1rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    &--item2{
+      margin: 1rem;
     }
     &--2{
       display: flex;
+      justify-content: center;
+      align-items: baseline;
     }
     &--profile{
       &-img{
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
       }
     }
     &--logo{
-      width: 2rem;
-      height: 2rem;
+      width: 4rem;
+      height: 4rem;
+      text-decoration: none;
+      display: flex;
+      margin-left: 1rem;
     }
     &--notifbar{
       &-btn{
@@ -70,7 +86,21 @@
       &-btn{
         border: none;
         background-color: unset;
+        margin-right: 13rem;
+        cursor: pointer;
       }
+    }
+    &--a{
+      color: #6c7383;
+      font-size: 2.5rem;
+    }
+
+    &--menu{
+      text-align: center;
+      align-self: flex-start;
+      justify-content: flex-start;
+      color: #6c7383;
+      cursor: pointer;
     }
   }
 
