@@ -1,0 +1,42 @@
+.verified-page{
+    &__container{
+        width: 100%;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        background-color: $color-white;
+        box-shadow: 0 0 1px 1px #eee;
+        padding: 2rem;
+        border-radius: 8px;
+    }
+    &_img{
+        width: 30%;
+    }
+    &_paragraph--1,&_paragraph--2{
+        font-size: 2rem;
+        text-align: justify;
+    }
+    &_link{
+        border-radius: 8px;
+        text-decoration: none;
+        color: $color-white;
+        background-color: $cadet-blue;
+        padding: 1rem;
+        width: 20rem;
+        text-align: center;
+        font-size: 1.6rem;
+        cursor: pointer;
+        &-refresh{
+            transition: transform ease 3s;
+        }
+        &:hover>&-refresh{
+            transform: rotate(180deg);
+        }
+    }
+}
