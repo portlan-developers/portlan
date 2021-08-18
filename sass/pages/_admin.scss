@@ -11,6 +11,15 @@
       margin-left: 0;
       margin-right: auto;
     }
+    &--notif{
+      &::before{
+        content: ".";
+        font-size: 80px;
+        color: red;
+        position: absolute;
+        transform: translate(8px, -84px);
+      }
+    }
   }
 
   &__search{

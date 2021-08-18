@@ -76,7 +76,7 @@ html {
     .container__admin--snackbar {
       padding: 2rem;
       width: 100%;
-      height: 6rem;
+      height: 7rem;
       display: flex;
       background-color: #fff;
       align-items: center;
@@ -88,7 +88,7 @@ html {
       left: 0;
       z-index: 1000; }
     .container__admin--navbar {
-      min-height: calc(100vh - 6rem);
+      min-height: calc(100vh - 7rem);
       width: 23rem;
       padding-top: 3rem;
       margin-top: 6rem;
@@ -2957,6 +2957,12 @@ label {
   .admin__svg--arrow {
     margin-left: 0;
     margin-right: auto; }
+  .admin__svg--notif::before {
+    content: ".";
+    font-size: 80px;
+    color: red;
+    position: absolute;
+    transform: translate(8px, -84px); }
 
 .admin__search {
   display: flex;
