@@ -71,15 +71,34 @@ html {
     height: 105vh;
     background-size: cover;
     background-position: top; }
-  .container__admin--snackbar {
-    width: 100%;
-    height: 8rem;
-    display: flex;
-    background-color: #fff;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.34); }
+  .container__admin {
+    background-color: #F5F7FF; }
+    .container__admin--snackbar {
+      width: 100%;
+      height: 8rem;
+      display: flex;
+      background-color: #fff;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.34);
+      z-index: 200;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1000; }
+    .container__admin--navbar {
+      width: 23rem;
+      padding: 2rem;
+      padding-top: 3rem;
+      margin-top: 8rem;
+      height: 100vh;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start; }
 
 body {
   font-family: "IRANSans";
@@ -2930,11 +2949,39 @@ label {
       color: #fff; }
 
 .admin__svg {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   outline: none;
   border: none;
-  background-color: none; }
+  background-color: none;
+  fill: #6c7383; }
+  .admin__svg--arrow {
+    margin-left: 0;
+    margin-right: auto; }
+
+.admin__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40%; }
+  .admin__search--btn {
+    border: none;
+    background-color: unset;
+    cursor: pointer; }
+  .admin__search--input {
+    font-family: inherit;
+    border: none;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 1000rem;
+    color: #6c7383; }
+    .admin__search--input:focus {
+      outline: none; }
+  .admin__search--svg {
+    width: 2rem;
+    height: 2rem;
+    fill: #6c7383;
+    transform: translate(-1.5rem); }
 
 .admin__snackbar--1 {
   display: flex; }
@@ -2949,3 +2996,26 @@ label {
 .admin__snackbar--logo {
   width: 2rem;
   height: 2rem; }
+
+.admin__snackbar--notifbar-btn {
+  border: none;
+  background-color: unset; }
+
+.admin__snackbar--navbar-btn {
+  border: none;
+  background-color: unset; }
+
+.admin__navbar--items {
+  list-style: none; }
+
+.admin__navbar--item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 88%; }
+
+.admin__navbar--a {
+  padding: 1rem;
+  text-decoration: none;
+  color: #6c7383; }
