@@ -13,7 +13,7 @@
     }
     &--notif{
       &::before{
-        content: ".";
+        content: "."; 
         font-size: 80px;
         color: red;
         position: absolute;
