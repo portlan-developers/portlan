@@ -1,164 +1,205 @@
 @font-face {
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: bold;
-    src: url('/fonts');
-    src: url('/fonts/IRANSansWeb-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/IRANSansWeb-Bold.woff2') format('woff2'), url('/fonts/IRANSans-Bold-web.woff') format('woff'), url('/fonts/IRANSansWeb-Bold.ttf') format('truetype');
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts");
+  src: url("/fonts/IRANSansWeb-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/IRANSansWeb-Bold.woff2") format("woff2"),
+    url("/fonts/IRANSans-Bold-web.woff") format("woff"),
+    url("/fonts/IRANSansWeb-Bold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: 500;
-    src: url('/fonts/IRANSans-Medium.eot');
-    src: url('/fonts/IRANSans-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/IRANSans-Medium.woff2') format('woff2'), url('/fonts/IRANSans-Medium.woff') format('woff'), url('/fonts/IRANSans-Medium.ttf') format('truetype');
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/IRANSans-Medium.eot");
+  src: url("/fonts/IRANSans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/IRANSans-Medium.woff2") format("woff2"),
+    url("/fonts/IRANSans-Medium.woff") format("woff"),
+    url("/fonts/IRANSans-Medium.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: 200;
-    src: url('/fonts/IRANSansWeb-Light.eot');
-    src: url('/fonts/IRANSansWeb-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/IRANSansWeb-Light.woff2') format('woff2'), url('/fonts/IRANSansWeb-Light.woff') format('woff'), url('/fonts/IRANSansWeb-Light.ttf') format('truetype');
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/IRANSansWeb-Light.eot");
+  src: url("/fonts/IRANSansWeb-Light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/IRANSansWeb-Light.woff2") format("woff2"),
+    url("/fonts/IRANSansWeb-Light.woff") format("woff"),
+    url("/fonts/IRANSansWeb-Light.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: normal;
-    src: url('/fonts/IRANSansWeb.eot');
-    src: url('/fonts/IRANSansWeb.eot?#iefix') format('embedded-opentype'), url('/fonts/IRANSansWeb.woff2') format('woff2'), url('/fonts/IRANSansWeb.woff') format('woff'), url('/fonts/IRANSansWeb.ttf') format('truetype');
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/IRANSansWeb.eot");
+  src: url("/fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/IRANSansWeb.woff2") format("woff2"),
+    url("/fonts/IRANSansWeb.woff") format("woff"),
+    url("/fonts/IRANSansWeb.ttf") format("truetype");
 }
 
 *,
 *::before,
 *::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-    @include phone-only {
-        font-size: 50%;
-    }
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  @include phone-only {
+    font-size: 50%;
+  }
+  scroll-behavior: smooth;
 }
-.scroll
-{
-	overflow-y: scroll !important;
-}
-
-
-
-.container{
-	&__contactUs{
-		background-image: url(../img/xcontacts-decoration.jpg.pagespeed.ic.N13xxM5moo.jpg);
-		background-position: 100% 115% ;
-		background-repeat: no-repeat;
-		display: flex;
-		justify-content:  flex-start;
-		align-items:center ;
-		flex-direction: column;
-		padding-bottom: 25rem;
-		@include desktop{
-			margin-bottom: 10rem;
-		}
-		&--page2{
-			width: 100%;
-			margin-top: -15rem;
-			margin-bottom: 10rem;
-			
-		}
-		&--page3{
-			width: 100%;
-			padding-bottom: 10rem;
-			display: flex;
-			justify-content: center;
-		}
-	}
-	width: 100%;
-	&__header{
-		background-image: url(./img/header.png);
-		height: 105vh;
-		background-size: cover;
-		background-position: top;
-	}
-}
-
-body {
-    font-family: 'IRANSans';
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    direction: rtl;
-}
-
 .scroll {
-    overflow-y: scroll !important;
+  overflow-y: scroll !important;
 }
 
 .container {
+  &__contactUs {
+    background-image: url(../img/xcontacts-decoration.jpg.pagespeed.ic.N13xxM5moo.jpg);
+    background-position: 100% 115%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 25rem;
+    @include desktop {
+      margin-bottom: 10rem;
+    }
+    &--page2 {
+      width: 100%;
+      margin-top: -15rem;
+      margin-bottom: 10rem;
+    }
+    &--page3 {
+      width: 100%;
+      padding-bottom: 10rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  width: 100%;
+  &__header {
+    background-image: url(./img/header.png);
+    height: 105vh;
+    background-size: cover;
+    background-position: top;
+  }
+  &__admin {
+    background-color: #F5F7FF;
+    &--snackbar {
+      padding: 2rem;
+      width: 100%;
+      height: 7rem;
+      display: flex;
+      background-color: #fff;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.15);
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1000;
+      
+    }
+    &--navbar{
+      min-height: calc(100vh - 7rem);
+      width: 23rem;
+      padding-top: 3rem;
+      margin-top: 6rem;
+      height: 100vh;
+      background-color:#fff;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      
+     
+    }
+  }
+}
+
+body {
+  font-family: "IRANSans";
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  direction: rtl;
+}
+
+.scroll {
+  overflow-y: scroll !important;
+}
+
+.container {
+  width: 100%;
+  &__header {
+    background-image: url(./img/header.png);
+    height: 105vh;
+    background-size: cover;
+    background-position: top;
+  }
+  &__cards {
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  &__integrated--card {
+    display: grid;
+    place-items: center;
+  }
+  &__slider {
+    background-color: #fff;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    &__header {
-        background-image: url(./img/header.png);
-        height: 105vh;
-        background-size: cover;
-        background-position: top;
-    }
-    &__cards {
-        background-color: white;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    &__integrated--card {
-        display: grid;
-        place-items: center;
-    }
-    &__slider {
-        background-color: #fff;
-        padding-bottom: 10rem;
-        padding-top: 10rem;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    &__quote {
-        display: flex;
-        flex-direction: column;
-        background-image: url(../img/bg-quote-main.webp);
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        text-align: center;
-        background-position: 50% 0;
-        background-size: cover;
-        align-items: center;
-        background-attachment: fixed;
-    }
-  
-    &__section--card {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    }
-    &__contact {
-        background-image: url(../img/xbg-form-gray.jpg.pagespeed.ic.ehU-ftk8jC.webp);
-        background-size: cover;
-        background-position-x: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding-bottom: 8rem;
-        padding-top: 3rem;
-        position: relative;
-    }
-    &__footer {
-        background-color: #3d3c42;
-    }
+    display: flex;
+    flex-direction: column;
+  }
+  &__quote {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/bg-quote-main.webp);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    background-position: 50% 0;
+    background-size: cover;
+    align-items: center;
+    background-attachment: fixed;
+  }
+
+  &__section--card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+  &__contact {
+    background-image: url(../img/xbg-form-gray.jpg.pagespeed.ic.ehU-ftk8jC.webp);
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 8rem;
+    padding-top: 3rem;
+    position: relative;
+  }
+  &__footer {
+    background-color: #3d3c42;
+  }
 }
