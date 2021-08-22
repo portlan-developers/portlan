@@ -1,0 +1,25 @@
+ <!-- send message -->
+ <div id="send-article__admin">
+    <h1 class="send-article__admin--heading text-center  ">ارسال پست</h1>
+    <div class="send-article__admin--box">
+      <form action="" class="form--admin--controller">
+        <label for="title">عنوان</label>
+        <input class="form-control p-3" name="title" type="text">
+        <label for="des">توضیحات مختصر </label>
+        <textarea class="form-control" name="des"  id="" cols="30" rows="10" placeholder="توضیحات مختصر..."></textarea>
+
+        <label >توضیحات کامل</label>
+        <textarea id="editor" name="text" class="w-100">
+     </textarea>
+      <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
+      <script>
+          CKEDITOR.replace( 'editor' );
+      </script>
+      <button class="btn btn-success w-50 mt-5 align-self-center">
+        <span class="fa fa-send-o"></span>
+        ارسال
+      </button>
+      </form>
+    </div>
+  </div>
+  <!-- /send message -->

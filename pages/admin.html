@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fa_IR" dir="rtl">
   <head>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +33,6 @@
         <nav class="admin__snackbar--1">
           <div class="admin__snackbar--item1">
             <a href="#" class="admin__snackbar--logo">
-              <img src="../img/logo.png" alt="portlan logo" class="admin__snackbar--logo"/>
               <span class="admin__snackbar--a">portlan</span>
             </a>
           </div>
@@ -85,205 +86,61 @@
           </div>
         </nav>
       </section>
-
+</div>
       <!---------- navbar ---------->
 
-      <section class="container__admin--navbar">
+    <main class="admin--container__admin">
+      <section class="admin--section-1">
         <ul class="admin__navbar--items">
           <li class="admin__navbar--item">
-            <svg class="admin__svg">
-              <use xlink:href="../img/symbol-defs4.svg#icon-grid"></use>
-            </svg>
+              <span class="fa fa-home icon--admin"></span>
             <a href="#" class="admin__navbar--a">داشبورد</a>
           </li>
           <li class="admin__navbar--item">
-            <svg class="admin__svg">
-              <use xlink:href="../img/symbol-defs4.svg#icon-show-sidebar"></use>
-            </svg>
+            <span class="fa fa-send icon--admin"></span>
+
             <a class="admin__navbar--a" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-title">المنت های ui</span>
+              <span class="menu-title ">ارسال پست</span>
+              <span class="fa fa-arrow-left"></span>
             </a>
-            <svg class="admin__svg admin__svg--arrow">
-              <use xlink:href="../img/symbol-defs4.svg#icon-keyboard_arrow_left"></use>
-            </svg>
           </li>
-          <li class="admin__navbar--item"> 
-            <svg class="admin__svg">
-              <use xlink:href="../img/symbol-defs4.svg#icon-clipboard"></use>
-            </svg>
+
+          <li class="admin__navbar--item">
+            <span class="fa fa-image icon--admin"></span>
+
             <a class="admin__navbar--a" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-title">فرم</span>
+              <span class="menu-title ">آپلود عکس</span>
+              <span class="fa fa-arrow-left"></span>
             </a>
-            <svg class="admin__svg admin__svg--arrow">
-              <use xlink:href="../img/symbol-defs4.svg#icon-keyboard_arrow_left"></use>
-            </svg>
+          </li>
+
+
+          <li class="admin__navbar--item">
+            <span class="fa fa-users icon--admin"></span>
+                <a class="admin__navbar--a" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-title ">کاربران</span>
+              <span class="fa fa-arrow-left"></span>
+            </a>
           </li>
           <li class="admin__navbar--item">
-            <svg class="admin__svg">
-              <use xlink:href="../img/symbol-defs4.svg#icon-stats-bars2"></use>
-            </svg>
-            <a class="admin__navbar--a" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-title">نمودار ها</span>
-            </a>
-            <svg class="admin__svg admin__svg--arrow">
-              <use xlink:href="../img/symbol-defs4.svg#icon-keyboard_arrow_left"></use>
-            </svg>
-          </li>
-          <li class="admin__navbar--item">
-            <svg class="admin__svg">
-              <use xlink:href="../img/symbol-defs4.svg#icon-table2"></use>
-            </svg>
-            <a class="admin__navbar--a" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-title">جدول ها</span>
-            </a>
-            <svg class="admin__svg admin__svg--arrow">
-              <use xlink:href="../img/symbol-defs4.svg#icon-keyboard_arrow_left"></use>
-            </svg>
-          </li>
-          <li class="admin__navbar--item">
-            <svg class="admin__svg">
-              <use xlink:href="../img/symbol-defs4.svg#icon-make-group"></use>
-            </svg>
-            <a class="admin__navbar--a" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-title">ایکون ها</span>
-            </a>
-            <svg class="admin__svg admin__svg--arrow">
-              <use xlink:href="../img/symbol-defs4.svg#icon-keyboard_arrow_left"></use>
-            </svg>
-          </li>
-          <li class="admin__navbar--item">
-            <svg class="admin__svg">
-              <use xlink:href="../img/symbol-defs4.svg#icon-user"></use>
-            </svg>
-            <a class="admin__navbar--a" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-title">صفحات یوزر</span>
-            </a>
-            <svg class="admin__svg admin__svg--arrow">
-              <use xlink:href="../img/symbol-defs4.svg#icon-keyboard_arrow_left"></use>
-            </svg>
-          </li>
-          <li class="admin__navbar--item">
-            <svg class="admin__svg">
-              <use xlink:href="../img/symbol-defs4.svg#icon-error_outline"></use>
-            </svg>
-            <a class="admin__navbar--a" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-title">صفحات ارور</span>
-            </a>
-            <svg class="admin__svg admin__svg--arrow">
-              <use xlink:href="../img/symbol-defs4.svg#icon-keyboard_arrow_left"></use>
-            </svg>
-          </li>
-          <li class="admin__navbar--item">
-            <svg class="admin__svg">
-              <use xlink:href="../img/symbol-defs4.svg#icon-file-text2"></use>
-            </svg>
-            <a class="admin__navbar--a" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-title">مستندات</span>
+            <span class="fa fa-bar-chart icon--admin"></span>
+                <a class="admin__navbar--a" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-title ">درخواست ها</span>
+              <span class="fa fa-arrow-left"></span>
             </a>
           </li>
+      
+ 
         </ul>
       </section>
-
-      <!---------- tab ---------->
-      <section class="container__admin--tab">
-        <div class="admin__tab--opt">
-          <h2 class="admin__tab--h2">لیست کار ها</h2>
-          <h2 class="admin__tab--h2">پیام ها</h2>
-        </div>
-        <hr>
-        <div class="admin__tab--todo">
-          <form class="admin__tab--todo-add">
-            <input type="text" class="admin__tab--input" placeholder="کار خود را وارد کنید">
-            <button class="admin__tab--btn" onclick="newElement()">اضافه کردن</button>
-          </form>
-          <ul class="admin__tab--todo-items">
-            <li class="admin__tab--todo-item">
-              task 1
-            </li>
-            <li class="admin__tab--todo-item checked">
-              task 2
-            </li>
-          </ul>
-        </div>
-        <div class="admin__tab--events">
-          <h3 class="admin__tab--h3">رویدادها</h3>
-          <ul class="admin__tab--event">
-            <li class="admin__tab--event-1">
-              <h4 class="admin__tab--h4">۲۶تیر</h4>
-              <p class="admin__tab--p">فرار به مریخ</p>
-            </li>
-            <li class="admin__tab--event-1">
-              <h4 class="admin__tab--h4">۲۶تیر</h4>
-              <p class="admin__tab--p">فرار به مریخ</p>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="admin__tab--chats">
-          <ul class="admin__tab--chat">
-            <li class="admin__tab--friend active">
-              amanda
-            </li>
-            <li class="admin__tab--friend active">
-              amanda
-            </li>
-            <li class="admin__tab--friend active">
-              amanda
-            </li>
-          </ul>
-        </div>
+      <section class="admin--section-2">
+       
       </section>
+    </main>
+     
 
-      <!---------- main part ---------->
-      <section class="container__admin--main">
-        <h3 class="admin__main--h3">ادمین گرامی خوش آمدید</h3>
-        <p class="admin__main--p">کل سیستم ها بطور منظم در حال اجرا هستند! شما <span class="admin__main--span">۳ پیام </span> نخوانده دارید.</p>
-        <button class="admin__main--date">امروز(۲۶ تیرماه)</button>
-        <div class="admin__main--cards">
-          <div class="admin__main--card-1">
-            <div class="admin__main--card-text">
-              <svg class="admin__main--svg"><use xlink:href="../img/symbol-defs5.svg"></use></svg>
-              <h3 class="admin__main--h3">53 <sup>c</sup></h3>
-              <div class="admin__main--card-t2">
-                <h4 class="admin__main--h4">Ardebil</h4>
-                <h5 class="admin__main--h5">Iran</h5></div>
-            </div>
-          </div>
-          <div class="admin__main--card-2">
-            <div class="admin__main--card-3">
-              <h5 class="admin__main--h5">درخواست  های امروز</h5>
-              <h4 class="admin__main--h3">3400</h4>
-              <h5 class="admin__main--h5">22.00% (30روز)</h5>
-            </div>
-            <div class="admin__main--card-4">
-              <h5 class="admin__main--h5">درخواست  های امسال</h5>
-              <h4 class="admin__main--h3">3400</h4>
-              <h5 class="admin__main--h5">22.00% (30روز)</h5>
-            </div>
-            <div class="admin__main--card-5">
-              <h5 class="admin__main--h5">مشتریان امسال</h5>
-              <h4 class="admin__main--h3">3400</h4>
-              <h5 class="admin__main--h5">22.00% (30روز)</h5>
-            </div>
-            <div class="admin__main--card-6">
-              <h5 class="admin__main--h5">مشتریان امروز</h5>
-              <h4 class="admin__main--h3">3400</h4>
-              <h5 class="admin__main--h5">22.00% (30روز)</h5>
-            </div>
-          </div>
-        </div>
-        <div class="admin__main--cards">
-          <div class="admin__main--card-1">
-            <h3 class="admin__main--h3">اطلاعات درخواست ها</h3>
-            <p class="admin__main--p">یهترتبرب بثرقبترتبنر برترقبنترثب برتقربقزب بررثقبتنر بتربتنر برب ربترب</p>
-          </div>
-          <div class="admin__main--card-2">
-            <h3 class="admin__main--h3">اطلاعات پروژه های ارائه شده</h3>
-            <p class="admin__main--p">یهترتبرب بثرقبترتبنر برترقبنترثب برتقربقزب بررثقبتنر بتربتنر برب ربترب</p>
-          </div>
-        </div>
-      </section>
-  </div>
+
+  
+
   </body>
 </html>
