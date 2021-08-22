@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "node-sass sass/style.scss css/style.css --watch",
+    "wa": "node-sass sass/admin.scss css/admin.css --watch",
     "compile": "node-sass sass/style.scss css/style.css"
   },
   "author": "portlan",
